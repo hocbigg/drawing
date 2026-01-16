@@ -4,11 +4,6 @@
 <p>
   Path to a free self-taught education in Drawing!
 </p>
-<p>
-  <a href="https://github.com/hocbigg/drawing">
-    <img alt="Hocbigg" src="/images/view_on_github.svg"
-  ></a>
-</p>
 </div>
 
 # Contents
@@ -20,12 +15,12 @@
 
 # Summary
 
-The Drawing curriculum is a **complete education in Drawing** using online materials.
+The Drawing curriculum is a complete education in Drawing using online materials.
 
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
+they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
 
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order. For simplicity, we recommend working through courses in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
+Process. Students can work through the curriculum alone or in groups, in order or out of order. For simplicity, we recommend working through courses in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
 
 **[How to contribute](/CONTRIBUTING.html)**
 
@@ -44,6 +39,9 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [Drawabox Official Discord](https://discord.gg/drawabox) (structured critiques tied to lessons)
   - [New Masters Academy Discord](https://discord.gg/nma) (open to all, focused on serious art study and feedback)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/drawing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 # Curriculum
 

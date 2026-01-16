@@ -1,4 +1,4 @@
-# Great Readings
+# Extra Reading
 
 This document consists of great books or articles on Drawing.
 Some are here because there is a course covering the same material;
@@ -14,14 +14,14 @@ Name | Author(s)
 :-- | :--:
 [Keys to Drawing](https://www.amazon.com/Keys-Drawing-Bert-Dodson/dp/0891343377) | Bert Dodson
 [Drawing on the Right Side of the Brain](https://www.amazon.com/New-Drawing-Right-Side-Brain/dp/1585429201) | Betty Edwards
-[Fun with a Pencil](https://archive.org/details/FunWithAPencil) (free PDF) | Andrew Loomis
+[Fun with a Pencil](https://archive.org/details/FunWithAPencil) | Andrew Loomis
 
 ### Light, Shadow & Form
 
 Name | Author(s)
 :-- | :--:
 [Color and Light: A Guide for the Realist Painter](https://www.amazon.com/Color-Light-Guide-Realist-Painter/dp/0740797719) | James Gurney
-[Successful Drawing](https://archive.org/details/Andrew_Loomis_Successful_Drawing) (free PDF) | Andrew Loomis
+[Successful Drawing](https://archive.org/details/Andrew_Loomis_Successful_Drawing) | Andrew Loomis
 
 ### Figure & Anatomy
 
@@ -35,4 +35,4 @@ Name | Author(s)
 Name | Author(s)
 :-- | :--:
 [A History of Art in 21 Cats](https://www.amazon.com/History-Art-21-Cats/dp/1449497903) (fun supplementary) | Nia Gould
-[Ways of Seeing](https://archive.org/details/waysofseeing00berg) (free PDF) | John Berger
+[Ways of Seeing](https://archive.org/details/waysofseeing00berg) | John Berger
