@@ -3,39 +3,30 @@ title: Hocbigg - Drawing
 description: Path to a free self-taught education in Drawing!
 ---
 
-# Contents
-
-- [Summary](#summary)
-- [Communities](#communities)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
-
-# Summary
+## Introduction
 
 The Drawing curriculum is a comprehensive education in Drawing, designed for self-directed study using online materials.
 
-## Organization
+Drawing is both a discipline of observation and a method of construction: it trains the eye to analyze spatial relationships and the hand to represent three-dimensional form on a flat surface. Whether your ultimate objective is fine art, illustration, concept design, or visual communication, drawing serves as the foundational grammar for almost all visual media. 
 
-This repository is organized into three main components:
+This curriculum is designed for independent, self-directed study and assumes no prior drawing experience. Progress in drawing relies on deliberate motor control, spatial reasoning, and perceptual training rather than innate talent. All exercises can be completed with minimal, accessible equipment — pencil, pen, paper, and an eraser.
 
-- **Core Curriculum** (this page): the foundational knowledge of the field;
-- **[Advanced Topics](advanced_topics.md)**: focused study in specific areas;
-- **[Projects](projects.md)**: support learning through practical application throughout the curriculum.
+### How to Approach the Material
 
-**Process:** Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.
+While drawing skills reinforce one another continuously rather than developing in total isolation, the curriculum is arranged in a functional order of progression:
 
-- For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.
-- The Core Curriculum provides a shared foundation and is intended to be completed in full.
-- Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.
+- **Construction and Observation:** Begin with *Fundamentals of Line, Shape, Form, and Construction* and *Observational Drawing and Still Life*. These train your motor coordination, line confidence, and sighting techniques (measuring angles, proportions, and alignments accurately from life).
+- **Space and Volume:** Move into *Perspective* and *Value, Light, and Shading*. Perspective establishes the geometric rules required to place objects believably in deep space, while value and light mechanics give flat shapes three-dimensional mass and depth.
+- **The Figure:** When approaching the human form, practice *Gesture Drawing* before or alongside *Human Anatomy Fundamentals*. Capturing rhythm, motion, and weight first ensures your figure drawings remain dynamic rather than becoming stiff or overworked once skeletal and muscular landmarks are applied.
+- **Arrangement:** Study *Composition* to understand how to combine individual objects, values, and figures into readable, intentional visual arrangements.
 
-Practical work is integrated through the [Projects section](projects.md) and may be undertaken alongside coursework.
+### Next Steps
 
-Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
+This curriculum focuses strictly on core representational mechanics — line, volume, proportion, light, and structure. It does not attempt to cover stylized aesthetics, medium-specific techniques (such as painting or digital software), or complete portfolio development. 
 
-**[How to contribute](/CONTRIBUTING.html)**
+Once you have established consistent competence across these fundamental areas, explore [Advanced Topics](advanced_topics.md) for specialized disciplines, apply your skills to practical work through [Projects](projects.md), or consult [Readings](extras/readings.md) and [Courses](extras/courses.md) for further theoretical depth and extended visual demonstrations.
 
-# Communities
+### Communities
 
 - Forums:
     - [WetCanvas](https://www.wetcanvas.com/forums-index/) (active traditional art forums with drawing sections and critiques)
@@ -50,70 +41,72 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
     - [Drawabox Official Discord](https://discord.gg/drawabox) (structured critiques tied to lessons)
     - [New Masters Academy Discord](https://discord.gg/nma) (open to all, focused on serious art study and feedback)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/drawing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
-- Join our Discord server (for discussions around this and other curricula): 
-    
-    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
-# Curriculum
+# Drawing
 
-## Fundamentals of Line, Shape, Form, and Construction
+## Fundamentals of Line, Shape, and Form
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Basic Drawing & Form | Build confidence in lines, understand 3D forms, and develop constructive thinking essential for all drawing. | [*Drawing on the Right Side of the Brain*](https://www.amazon.com/Drawing-Right-Side-Brain-Definitive/dp/1585429201) OR [*The Natural Way to Draw*](https://archive.org/details/The_Natural_Way_To_Draw_by_Kimon_Nicolaides/) | [DrawABox - Part One: The Basics](https://drawabox.com/lesson/0) |
+Builds confident, controlled line work and teaches you to see and construct any subject from simple 3D forms (boxes, cylinders, spheres) — the foundation everything else in drawing is built on.
 
-## Observational Drawing and Still Life
+[Drawing on the Right Side of the Brain (Betty Edwards)](https://books.google.com/books?isbn=9781585429202) - An alternative to the Nicolaides book below; focuses on retraining visual perception and is gentler for beginners who feel mentally blocked about drawing.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Observational Drawing Fundamentals | Develops seeing and recording skills, training the eye to capture reality accurately as the basis for all drawing. | [*Keys to Drawing*](https://www.amazon.com/Keys-Drawing-Bert-Dodson/dp/0891343377) by Bert Dodson | [New Masters Academy - Fundamentals of Drawing](https://www.nma.art/courses/fundamentals-of-drawing-and-perspective) OR DrawABox observational extensions |
+[The Natural Way to Draw (Kimon Nicolaides)](https://archive.org/details/The_Natural_Way_To_Draw_by_Kimon_Nicolaides/) - Free. An alternative to the Edwards book above; a more rigorous, structured year-long practice program built around gesture and contour studies from observation.
 
-## Gesture Drawing
-
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Gesture Drawing | Capture movement, energy, and pose quickly; foundational for dynamic figures. | | [Proko - Gesture Basics](https://www.proko.com/) + [S. Michael Hampton Gesture](https://www.youtube.com/playlist?list=PLQOGKNmiKFwVNYwIlrUIlmGFT2QlB9hVz) |
+[Lesson 0: Getting Started (DrawABox)](https://drawabox.com/lesson/0) - Free. Complements either book above with hands-on line-control and warm-up exercises, including guidance on basic tools and materials.
 
 ## Perspective
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Perspective | Create convincing 3D space; critical for placing forms believably. | [*Perspective Made Easy*](https://archive.org/details/PerspectiveMadeEasy) | [moderndayjames Perspective series](https://www.youtube.com/playlist?list=PLCIGm6amaRzvTt8TGNekIOWBf7oHC6DA0) |
+Teaches how to represent three-dimensional space convincingly using vanishing points and horizon lines, so objects and scenes read as believable in depth.
+
+[Perspective Made Easy (Ernest Norling)](https://archive.org/details/PerspectiveMadeEasy) - Free, public domain. A classic, systematic primer covering one-, two-, and three-point perspective.
+
+[Perspective (moderndayjames)](https://www.youtube.com/playlist?list=PLCIGm6amaRzvTt8TGNekIOWBf7oHC6DA0) - Free video playlist. Complements the book with visual walkthroughs of the same core concepts in practice.
+
+## Value, Light, and Shadow
+
+Covers how light behaves on a form and how translating that into value (light versus dark) creates the illusion of volume and depth on a flat page.
+
+[Light, Shade and Shadow (E. L. Koller)](https://books.google.com/books?isbn=9780486468853) - Inexpensive classic reference explaining light-on-form principles, from simple geometric shapes through to the human figure.
+
+[Shading (Alphonso Dunn)](https://www.youtube.com/playlist?list=PLhBKkQX9XSgf6zt8NbD1FNWTF6FLoRXZN) - Free video playlist. Complements the book by demonstrating hands-on shading techniques like hatching and blending.
+
+[A Beginner's Guide to Light & Shadow (Will Kemp Art School)](https://willkempartschool.com/a-beginners-guide-to-shadow-light-part-1-drawing/) - Free article. A short, clear explanation of "light logic" that works well as a conceptual summary alongside the two resources above.
+
+## Observational Drawing Fundamentals
+
+Develops the skill of seeing and recording what's actually in front of you, training the eye to capture reality accurately rather than drawing from assumption.
+
+[Keys to Drawing (Bert Dodson)](https://books.google.com/books?isbn=9780891343370) - Fifty-five practical "keys" and exercises for drawing any subject with confidence, aimed squarely at beginners.
+
+[Lesson 6: Applying Construction to Everyday Objects (DrawABox)](https://drawabox.com/lesson/6) - Free. Complements the book with hands-on practice applying construction skills to real household objects as still-life subjects.
+
+## Proportion & Sighting Techniques
+
+Trains accurate visual measurement — comparing angles, distances, and units by eye — a core prerequisite for representational accuracy in any subject.
+
+[How to Draw Accurate Proportions (Proko)](https://www.youtube.com/watch?v=AzDGO0LssEM) - Free video covering measuring, sighting, and self-critique techniques.
+
+## Gesture Drawing
+
+Captures movement, energy, and pose quickly using a few confident lines — foundational for drawing any dynamic figure later on.
+
+[Vilppu Drawing Manual (Glenn Vilppu)](https://nma.art/drawingmanual) - Paid (~$40–60). Widely regarded as the canonical gesture-drawing manual; a worthwhile deeper investment once you've tried the free option below.
+
+[Gesture Drawing (Steven Michael Hampton)](https://www.youtube.com/playlist?list=PLQOGKNmiKFwVNYwIlrUIlmGFT2QlB9hVz) - Free, 24-video playlist. A full alternative to the paid manual above if you'd rather start without spending money.
 
 ## Human Anatomy Fundamentals
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Basic Human Anatomy | Understand structure and proportions for believable figures. | [*Figure Drawing for All It's Worth*](https://archive.org/details/FigureDrawingForAllItsWorth) by Andrew Loomis (free) | [PROKO ANATOMY TUTORIALS](https://www.youtube.com/playlist?list=PLg3tq-SuqiTlyL1pZDwNxSnCTGBZOiHvn) |
+Covers the skeletal and muscular structure and proportions needed to draw believable human figures.
 
-## Value, Light, and Shading
+[Figure Drawing for All It's Worth (Andrew Loomis)](https://archive.org/details/andrewloomiscreative.illustration) - Free, public domain (part of a compiled Andrew Loomis collection on Internet Archive — look for the "Figure Drawing for all it's Worth" file within it). A systematic, classic reference.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Value and Shading | Master value to create volume and illusion of form. | [*Light, Shade and Shadow*](https://www.amazon.com/Light-Shade-Shadow-Dover-Instruction/dp/0486468852) | [Shading - Alphonso Dunn](https://www.youtube.com/playlist?list=PLhBKkQX9XSgf6zt8NbD1FNWTF6FLoRXZN) OR Proko shading |
-| Light and Shadow | Understand how light creates predictable patterns for realistic 3D illusion. | | [A Beginners Guide to Light & Shadow](https://willkempartschool.com/a-beginners-guide-to-shadow-light-part-1-drawing/) |
-
-## Color Theory
-
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Color Theory | Understand hue, saturation, value, and harmony for effective color use. | [*Color and Light*](https://www.amazon.com/Color-Light-Guide-Realistic-Painting/dp/0740797719) by James Gurney | [Marco Bucci Color](https://www.youtube.com/playlist?list=PL002hNYqg1VjoRaboVhLbbCPR_0i2xUxV) |
+[Proko Anatomy Tutorials](https://www.youtube.com/playlist?list=PLg3tq-SuqiTlyL1pZDwNxSnCTGBZOiHvn) - Free playlist. Complements the book with visual demonstrations of the same skeletal and muscular concepts.
 
 ## Composition
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Composition | Arrange elements to guide the eye and create impactful images. | | [Art Lessons: Composition - ArtOfSoulburn](https://www.youtube.com/playlist?list=PLVbzq9Kgoo1IsIldx9uHu2M2OHdJW-fhm) |
+Covers how to arrange the elements of a drawing to guide the viewer's eye and create an impactful, readable image.
 
-## Congratulations
+[Framed Ink: Drawing & Composition for Visual Storytellers (Marcos Mateu-Mestre)](https://books.google.com/books?isbn=9781933492957) - Approaches composition through narrative/cinematic staging — a practical, widely-used text, though angled toward visual storytelling.
 
-After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Drawing.
-Congratulations!
-
-# Code of conduct
-
-[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
+[Art Lessons: Composition (ArtOfSoulburn)](https://www.youtube.com/playlist?list=PLVbzq9Kgoo1IsIldx9uHu2M2OHdJW-fhm) - Free, 11-video playlist. Complements the book with more classical compositional theory — balance, focal points, the rule of thirds.
 

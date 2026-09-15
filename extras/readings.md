@@ -1,38 +1,39 @@
-# Extra Reading
+# Great Readings
 
-This document consists of great books or articles on Drawing.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.
+This curated bibliography collects influential books, historical treatises, and theoretical texts that examine drawing as an intellectual, perceptual, and spatial discipline. These readings extend beyond technical exercises to explore how master practitioners and scholars think about the medium.
 
-Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.
+## Observational Drawing and Perceptual Theory
 
+| Title | Author(s) |
+| --- | --- |
+| [*The Practice and Science of Drawing*](https://www.gutenberg.org/ebooks/14264) | Harold Speed |
+| [*The Elements of Drawing*](https://www.gutenberg.org/ebooks/30325) | John Ruskin |
+| [*Art and Illusion: A Study in the Psychology of Pictorial Representation*](https://archive.org/details/artillusionstudy0000gomb_o9d9) | E. H. Gombrich |
+| [*The Art of Responsive Drawing*](https://books.google.com/books?isbn=9780131945616) | Nathan Goldstein |
 
-### Observational & Fundamentals
+## Form, Light, and Spatial Construction
 
-Name | Author(s)
-:-- | :--:
-[Keys to Drawing](https://www.amazon.com/Keys-Drawing-Bert-Dodson/dp/0891343377) | Bert Dodson
-[Drawing on the Right Side of the Brain](https://www.amazon.com/New-Drawing-Right-Side-Brain/dp/1585429201) | Betty Edwards
-[Fun with a Pencil](https://archive.org/details/FunWithAPencil) | Andrew Loomis
+| Title | Author(s) |
+| --- | --- |
+| [*Successful Drawing*](https://archive.org/details/Andrew_Loomis_Successful_Drawing) | Andrew Loomis |
+| [*Color and Light: A Guide for the Realist Painter*](https://books.google.com/books?isbn=9780740797712) | James Gurney |
+| [*Dynamic Light and Shade*](https://books.google.com/books?isbn=9780823015818) | Burne Hogarth |
+| [*Creative Perspective for Artists and Illustrators*](https://books.google.com/books?isbn=9780486273372) | Ernest W. Watson |
 
-### Light, Shadow & Form
+## Figure Drawing and Structural Anatomy
 
-Name | Author(s)
-:-- | :--:
-[Color and Light: A Guide for the Realist Painter](https://www.amazon.com/Color-Light-Guide-Realist-Painter/dp/0740797719) | James Gurney
-[Successful Drawing](https://archive.org/details/Andrew_Loomis_Successful_Drawing) | Andrew Loomis
+| Title | Author(s) |
+| --- | --- |
+| [*Bridgman's Complete Guide to Drawing from Life*](https://archive.org/details/bridgmanscomplet0000brid) | George B. Bridgman |
+| [*Human Anatomy for Artists: The Elements of Form*](https://books.google.com/books?isbn=9780195052060) | Eliot Goldfinger |
+| [*Classic Human Anatomy: The Artist's Guide to Form, Function, and Movement*](https://books.google.com/books?isbn=9780823024155) | Valerie L. Winslow |
+| [*Anatomy Lessons from the Great Masters*](https://books.google.com/books?isbn=9780823002818) | Robert Beverly Hale and Terence Coyle |
 
-### Figure & Anatomy
+## Art History, Visual Culture, and Drawing Theory
 
-Name | Author(s)
-:-- | :--:
-[Classic Human Anatomy](https://www.amazon.com/Classic-Human-Anatomy-Motion-Artists/dp/0823024156) | Valerie L. Winslow
-[Bridgman's Complete Guide to Drawing from Life](https://www.amazon.com/Bridgmans-Complete-Guide-Drawing-Life/dp/1402766785) | George B. Bridgman
-
-### Art History & Context
-
-Name | Author(s)
-:-- | :--:
-[A History of Art in 21 Cats](https://www.amazon.com/History-Art-21-Cats/dp/1449497903) (fun supplementary) | Nia Gould
-[Ways of Seeing](https://archive.org/details/waysofseeing00berg) | John Berger
+| Title | Author(s) |
+| --- | --- |
+| [*Ways of Seeing*](https://archive.org/details/waysofseeing00berg) | John Berger |
+| [*The Primacy of Drawing: Histories and Theories of Practice*](https://books.google.com/books?isbn=9780300126464) | Deanna Petherbridge |
+| [*The Analysis of Beauty*](https://archive.org/details/analysisofbeauty00hoga) | William Hogarth |
+| [*Secret Knowledge: Rediscovering the Lost Techniques of the Old Masters*](https://books.google.com/books?isbn=9780500286388) | David Hockney |

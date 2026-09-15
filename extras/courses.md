@@ -1,29 +1,28 @@
-# Extra Courses
+# Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+This curated directory collects standout, freely accessible video courses and recorded lecture series for self-directed learners in drawing. These courses provide structured visual demonstrations and mental models across core and specialized branches of draughtsmanship.
 
-### Fundamentals
+## Observational Drawing and Foundational Mark-Making
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Drawing Basics (Proko YouTube Series)](https://www.youtube.com/playlist?list=PLtG4P3lq8RHGxBICKR3db7M1rQ3rYTrfl) | ~20 hours (self-paced videos) | 10–15 hours/week
-[The Art & Science of Drawing (Brent Eviston on Skillshare – free trial available)](https://www.skillshare.com/en/classes/the-art-science-of-drawing-basic-skills/975430112) | 8 weeks | 5–10 hours/week
-[Figure Drawing Fundamentals (Proko Free Lessons)](https://www.proko.com/course/figure-drawing-fundamentals) | ~15 hours | 10 hours/week
+- [The Elements of Drawing (University of Oxford Podcasts / Stephen Farthing R.A.)](https://podcasts.ox.ac.uk/series/elements-drawing)
+- [Ctrl+Paint Free Video Library: Drawing and Rendering Fundamentals (Ctrl+Paint / Matt Kohr)](https://www.ctrlpaint.com/library)
+- Pen & Ink Drawing Fundamentals and Textures (Alphonso Dunn / YouTube) (search "Alphonso Dunn Pen and Ink Drawing Tutorials" on YouTube)
 
-### Advanced / Specialized
+## Figure Drawing and Structural Anatomy
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Ctrl+Paint Free Video Library (Digital Drawing Fundamentals)](https://www.ctrlpaint.com/library) | Self-paced (100+ videos) | Variable
-[Love Life Drawing YouTube Series](https://www.youtube.com/c/LoveLifeDrawing/videos) | Ongoing series | 5–10 hours/week
-[Circle Line Art School Perspective Series](https://www.youtube.com/c/CircleLineArtSchool/videos) | Self-paced | 5 hours/week
+- [Figure Drawing Fundamentals (Proko / Stan Prokopenko)](https://www.proko.com/course/figure-drawing-fundamentals)
+- Bridgman Bootcamp: Form, Mass, and Structural Anatomy (Marshall Vandruff / YouTube) (search "Marshall Vandruff Bridgman Bootcamp" on YouTube)
+- Deciphering Anatomy and Dynamic Gesture (moderndayjames / YouTube) (search "moderndayjames deciphering bridgman" on YouTube)
+- The Figure Drawing Foundation: Seeing Movement and Rhythm (Love Life Drawing / YouTube) (search "Love Life Drawing Gesture Foundation" on YouTube)
 
-## Online Learning - Great Courses
+## Perspective, Form, and Spatial Staging
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week
-[Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week
-[Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week
+- 1994 Perspective Drawing Chalkboard Lectures (Marshall Vandruff / YouTube) (search "Marshall Vandruff 1994 Perspective Drawing" on YouTube)
+- Perspective and Volumetric Form Series (moderndayjames / YouTube) (search "moderndayjames perspective series" on YouTube)
+- Design Cinema: Environmental Staging and Visual Worldbuilding (FZD School of Design / Feng Zhu / YouTube) (search "FZD School Design Cinema" on YouTube)
+
+## Visual Storytelling and Character Design
+
+- [Pixar in a Box: The Art of Storytelling (Khan Academy & Pixar Animation Studios)](https://www.khanacademy.org/computing/pixar/storytelling)
+- Character Design Masterclass: Shape Language and Turnarounds (Stephen Silver / YouTube) (search "Stephen Silver Character Design Tutorials" on YouTube)
+- Cinematic Storyboarding and Visual Composition (moderndayjames / YouTube) (search "moderndayjames Storyboard and Composition" on YouTube)

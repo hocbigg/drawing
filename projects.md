@@ -1,107 +1,58 @@
 # Projects
 
-This page is a curated collection of well-written, step-by-step guides for learning Drawing through hands-on, project-based practice.
+This curated directory collects step-by-step project walkthroughs, practical guides, and production workflows for self-directed learners in drawing. Rather than following arbitrary difficulty tiers, select projects aligned with the specific visual artifacts you want to produce.
 
-> *What I cannot create, I do not understand — Richard Feynman.*
+## Draw an Observational Still Life
 
-These projects are meant to support learning throughout the curriculum, not only at the end.  
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.
+- [How to Draw Still Life and Improve Your Drawing Techniques (Paul Priestley Art)](https://paulpriestleyart.com/drawing-still-life)
+- Basic Drawing Techniques: Draw a Compelling Still Life in 5 Steps (Steven J. Levin / Artists Network) (search "Basic Drawing Techniques Draw a Compelling Still Life in 5 Steps" on Artists Network)
 
-## Tutorials
+## Construct a Classical Cast or Figure Study
 
-* [Still Life](#draw-your-own-still-life)
-* [Figure Study](#draw-your-own-figure-study)
-* [Portrait](#draw-your-own-portrait)
-* [Landscape](#draw-your-own-landscape)
-* [Anatomical Diagram](#draw-your-own-anatomical-diagram)
-* [Perspective Construction](#draw-your-own-perspective-construction)
-* [Architectural Rendering](#draw-your-own-architectural-rendering)
-* [Technical Illustration](#draw-your-own-technical-illustration)
-* [Comic Panel Sequence](#draw-your-own-comic-panel-sequence)
-* [Storybook Illustration](#draw-your-own-storybook-illustration)
-* [Concept Art Piece](#draw-your-own-concept-art-piece)
-* [Character Design Sheet](#draw-your-own-character-design-sheet)
-* [Editorial Cartoon](#draw-your-own-editorial-cartoon)
-* [Scientific Illustration](#draw-your-own-scientific-illustration)
-* [Gesture Drawing Series](#draw-your-own-gesture-drawing-series)
-* [Expressive Sketchbook Page](#draw-your-own-expressive-sketchbook-page)
+- [Step by Step Figure Drawing Tutorial (The Drawing Source)](https://www.thedrawingsource.com/step-by-step-figure-drawing.html)
+- [Cast Drawing Tutorial: Blocking In and Shading Form (The Drawing Source)](https://www.thedrawingsource.com/cast-drawing.html)
 
-### Still Life
+## Execute a Tonal Portrait
 
-* [Basic Drawing Techniques: Draw a Compelling Still Life in 5 Steps](https://www.artistsnetwork.com/art-mediums/draw-a-compelling-still-life-basic-drawing-techniques) (Article / Tutorial)
-* [How to Draw Still Life and improve your drawing techniques](https://paulpriestleyart.com/drawing-still-life) (Video series / Tutorial)
+- [How to Draw a Portrait in Pencil: Step-by-Step Guide (Lancelot Richardson / Artists & Illustrators)](https://www.artistsandillustrators.co.uk/how-to/drawing/how-to-draw-a-portrait-in-pencil/)
+- [How to Draw a Portrait in the Three Quarters View (Vladimir London / Drawing Academy)](https://drawingacademy.com/how-to-draw-a-portrait)
 
-### Figure Study
+## Render a Landscape Composition
 
-* [Step by Step Figure Drawing Tutorial](https://www.thedrawingsource.com/step-by-step-figure-drawing.html) (Article / Multi-step guide)
-* [The Figure Drawing Roadmap](https://www.lovelifedrawing.com/roadmap1) (Article / Structured lessons)
+- [How to Draw Landscapes: Tips for Drawing Trees and Depth (Samuel Earp)](https://samuelearp.com/blog/how-to-draw-landscapes)
+- [How to Draw Perspective for Beginners: Landscape Depth (Will Kemp Art School)](https://willkempartschool.com/how-to-draw-perspective/)
 
-### Portrait
+## Build Geometric and Mechanical Forms in Perspective
 
-* [How to Draw a Portrait](https://drawingacademy.com/how-to-draw-a-portrait) (Article / Step-by-step)
-* [How to draw a portrait in pencil](https://www.artistsandillustrators.co.uk/how-to/drawing/how-to-draw-a-portrait-in-pencil) (Article / Tutorial)
+- [The 250 Box Challenge: Spatial Reasoning & Convergences (Drawabox)](https://drawabox.com/lesson/250boxes)
+- [Lesson 6: Applying Construction to Everyday Objects (Drawabox)](https://drawabox.com/lesson/6)
+- [Lesson 7: Applying Construction to Vehicles (Drawabox)](https://drawabox.com/lesson/7)
 
-### Landscape
+## Sketch an On-Location Architectural Scene
 
-* [How to Draw Landscapes: Tips for Drawing Trees](https://samuelearp.com/blog/how-to-draw-landscapes) (Article / Step-by-step)
-* [Landscape Drawing Tutorial: Rocky Oceanfront](https://www.studydrawing.com/drawing-tutorial-rocky-oceanfront) (Article / Walkthrough)
+- [Urban Sketching: Step-by-Step Location Walkthrough (Ian Fennelly / Urban Sketch Course)](https://www.urbansketchcourse.com/urban-sketching-step-by-step/)
+- Architectural Drawing Tutorial: How to Make a Good Composition (Alex Hillkurtz / Domestika) (search "Architectural Drawing Tutorial: How to Make a Good Composition" on Domestika)
 
-### Anatomical Diagram
+## Design a Production Character Turnaround Sheet
 
-* [Human Anatomy Fundamentals: Basic Body Proportions](https://design.tutsplus.com/articles/human-anatomy-fundamentals-basic-body-proportions--vector-18254) (Article / Proportions guide)
-* [Anatomical Drawing Tutorial: the human figure step by step](https://www.domestika.org/en/blog/11878-anatomical-drawing-tutorial-the-human-figure-step-by-step) (Article / Expressive anatomy)
+- [What Is a Turnaround in Character Design and How To Draw One (Domestika)](https://www.domestika.org/en/blog/5703-what-is-a-turnaround-in-character-design-and-how-to-draw-one)
+- [How to Make a Character Design Sheet (21 Draw)](https://www.21-draw.com/how-to-make-a-character-design-sheet)
 
-### Perspective Construction
+## Paint an Environment Concept Piece
 
-* [How to Draw a Figure in Perspective - Foreshortening](https://thevirtualinstructor.com/foreshortening.html) (Video / Demonstration)
+- [Painting Environment Concepts in No Time: 4-Value Thumbnailing (Evenant)](https://www.evenant.com/articles/painting-environment-concepts-in-no-time)
+- [How to Draw Environment Concept Art: Worldbuilding and Staging (RetroStyle Games)](https://retrostylegames.com/blog/how-to-draw-environment-concept-art)
 
-### Architectural Rendering
+## Lay Out a Sequential Comic Page
 
-* [Architectural Design With Sketchup: Component-Based Modeling, Plugins, Rendering](https://aichat.physics.ucla.edu/index.jsp/papersCollection/MD3AZk/Architectural_Design_With_Sketchup_Component_Based_Modeling_Plugins_Rendering_And_Scripting.pdf) (PDF guide) — Demonstrates workflows and component-based rendering processes for practical application.
-* [DIGITAL RENDERING](https://humanecology.ucdavis.edu/sites/g/files/dgvnsk161/files/inline-files/MRiha.pdf) (PDF handbook) — Explains hybrid rendering techniques with step-by-step instructions for consistent results.
+- [Pro Artist's Guide to Comic & Manga Layouts, Paneling, Flow (Clip Studio Art Rocket)](https://www.clipstudio.net/how-to-draw/archives/160963)
 
-### Technical Illustration
+## Illustrate a Children's Picture Book Layout
 
-* [How to Create Technical Drawings in 10 Steps](https://wikifactory.com/+wikifactory/stories/how-to-create-technical-drawings-in-10-steps) (Article / Guide) — Outlines key design considerations and process for clear technical drawings.
-* [The Beginners' Guide to Technical Illustration](https://www.maaillustrations.com/blogs/magazine/the-beginners-guide-to-technical-illustration) (Article) — Describes specialized creation methods and visual representation workflows.
+- [How to Illustrate a Children's Book: Getting Started (Abi Cushman)](https://abicushman.com/how-to-articles/how-to-illustrate-a-childrens-book-getting-started-part-1)
 
-### Comic Panel Sequence
+## Produce an Accurate Scientific or Botanical Illustration
 
-* [Pro Artist's Guide to Comic & Manga Layouts, Paneling, Flow](https://www.clipstudio.net/how-to-draw/archives/160963) (Article / Tutorial) — Teaches impactful paneling and page flow techniques for storytelling.
-* [Create a Comic: How to Plan and Lay Out Your Comic](https://design.tutsplus.com/tutorials/create-a-comic-how-to-plan-and-lay-out-your-comic--cms-24179) (Tutorial) — Covers storyboarding, panel types, and layout effects.
-
-### Storybook Illustration
-
-* [How to illustrate a children's book](https://www.artistsandillustrators.co.uk/how-to/illustration/how-to-illustrate-a-childrens-book) (Article / Process walkthrough) — Details stages of a commission from initial ideas to final illustrations.
-* [How to Illustrate a Children's Book: Getting Started (Part 1)](https://abicushman.com/how-to-articles/how-to-illustrate-a-childrens-book-getting-started-part-1) (Article) — Models the process from manuscript doodles to page thumbnails.
-
-### Concept Art Piece
-
-* [Painting Environment Concepts In No Time](https://www.evenant.com/articles/painting-environment-concepts-in-no-time) (Article / Technique guide) — Explains thumbnailing workflow for rapid idea generation and development.
-* [How to Draw Environment Concept Art](https://retrostylegames.com/blog/how-to-draw-environment-concept-art) (Article) — Provides tips and tools for creating game environment concepts.
-
-### Character Design Sheet
-
-* [What Is a Turnaround in Character Design and How To Draw One](https://www.domestika.org/en/blog/5703-what-is-a-turnaround-in-character-design-and-how-to-draw-one) (Article / Guide) — Step-by-step process for creating multi-angle character sheets.
-* [How to Make a Character Design Sheet](https://www.21-draw.com/how-to-make-a-character-design-sheet) (Article) — Explains required angles and construction for model sheets.
-
-### Editorial Cartoon
-
-* [How to Make a Political Cartoon: 14 Steps](https://www.wikihow.com/Make-a-Political-Cartoon) (Article / Step guide) — Covers planning, symbolism, and execution for opinion-based cartoons.
-* [Drawing Political Cartoons Using Procreate – Start To Finish](https://thevirtualinstructor.com/blog/drawing-political-cartoons-using-procreate-start-to-finish) (Article / Process) — Demonstrates full workflow from concept to finished piece.
-
-### Scientific Illustration
-
-* [Scientific Illustration Step-by-Step](https://theartofecology.com/2022/10/10/scientific-illustration-step-by-step) (Article / Process) — Details sketching, refining, and rendering stages for accuracy.
-* [The Art of Scientific Botanical Illustration](https://drawbotanical.com/art-of-botanical-illustration) (Article) — Focuses on morphology, accuracy, and communication in botanical drawing.
-
-### Gesture Drawing Series
-
-* [Learn how to draw poses and gestures from references](https://line-of-action.com/learn-to-draw) (Interactive / Practice tutorial)
-* [Gesture Drawing - The Ultimate Guide For Beginners](https://drawpaintacademy.com/gesture-drawing) (Article / Guide) — Explains timed poses and capturing action for repeated practice.
-* [Beginner Gesture Drawing Tutorial 1 - Capturing Movement in the Pose](https://www.lovelifedrawing.com/beginner-gesture-drawing-1-seeing-and-respecting-movement) (Tutorial) — Builds mindset and technique for ongoing series work.
-
-### Expressive Sketchbook Page
-
-* [My 16 Best Sketchbook Design Tips](https://www.youtube.com/watch?v=kbEOo4i-dgU) (Video) — Shows composition and integration techniques to create engaging pages.
-* [Expressive Sketchbooks: Developing Creative Skills, Courage, and Confidence](https://www.amazon.com/Expressive-Sketchbooks-Developing-Creative-Confidence/dp/163159835X) (Book description) — Offers mark-making, mixed media, and expressive exercises for page development.
+- [Scientific Illustration Step-by-Step: Cat Skull Case Study (Marissa Jacobs / The Art of Ecology)](https://theartofecology.com/2022/10/10/scientific-illustration-step-by-step)
+- [The Art of Scientific Botanical Illustration: Morphology & Techniques (Draw Botanical)](https://drawbotanical.com/art-of-botanical-illustration)
+- [Botanical Illustration: Step by Step Painting of Leaves (Lizzie Harper)](https://lizzieharper.co.uk/2016/11/botanical-illustration-step-by-step-painting-of-leaves/)
