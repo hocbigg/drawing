@@ -1,117 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/drawing/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics in Drawing</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/drawing/">
+  <link rel="canonical" href="https://hocbigg.github.io/drawing/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics in Drawing">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/drawing/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/drawing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/drawing/">Drawing</a>
-<a href="/drawing/advanced_topics.html">Advanced Topics</a>
-<a href="/drawing/projects.html">Projects</a>
-<a href="/drawing/extras/courses.html">Extra Courses</a>
-<a href="/drawing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/drawing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/drawing/">Drawing</a></li>
+      <li><a href="/drawing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/drawing/projects.html">Projects</a></li>
+      <li><a href="/drawing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/drawing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/drawing/extras/other_curricula.html">Other Curricula</a></li>
+      <li><a href="https://github.com/hocbigg/drawing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
-<h2 id="character-and-creature-design">Character and Creature Design</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Character Design</td>
-<td>Develop expressive, varied characters with personality, silhouette, and narrative appeal.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/HowToDrawComicsTheMarvelWay"><em>How to Draw Comics the Marvel Way</em></a> (focus on dynamic figures and design principles; adaptable for characters).</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PL7PRaGopCiYLpDkt6fqe2N6KnLZlIvMrD">character design course - Kavya Rao</a> OR <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLvRD_ud2ieXdSc_6vj-Fa-qE8Wk05dTvj">Character Design - Christophe Young</a> OR <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLnF2KxzinVX1FHWsWavMXDU_jqxdeMrtK">KNKL Character Design BootCamp (Full)</a></td>
-</tr>
-<tr>
-<td>Animal Drawing</td>
-<td>Learn gesture, anatomy variations, and locomotion for realistic or fantastical creatures as a foundation for design.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Weatherly-Guide-Drawing-Animals/dp/097103141X"><em>The Weatherly Guide to Drawing Animals</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=mA77noU56_8">Drawing Animals for Beginners - Part 1 - Structure &amp; Form</a> + <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=bPWLFp-XpmU">Drawing Animals for Beginners - Part 2 - Action, Foreshortening &amp; Details</a></td>
-</tr>
-<tr>
-<td>Creature Design</td>
-<td>Combine anatomy, imagination, and variation for original designs, blending animal and character elements.</td>
-<td><em>Creature Design with Aaron Blaise</em></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLgRfjS8fHJA8nAeP4ZyEXXUw0jzZUij_P">Creature Design Lessons - Draw Sessions</a> AND/OR <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLnqqJ8abE7KGQHpt8gTzcg-qwJtYluQKa">Concept Art Creature Painting</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="environment-design">Environment Design</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Environment Design</td>
-<td>Create believable worlds with depth, mood, and integration of elements.</td>
-<td></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PL4yGgJ_0LkkC4o6Bn69R9zXYGJhX0U7Nl">Environment design tutorials</a> AND/OR <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PL1TLSKocOLTt4Y3XTV8YVHd1OLQilD3AW">Worldbuilding 101 and Beyond</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="capstone">Capstone</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Style Development</td>
-<td>Encourages personal voice through experimentation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://musicfundamentals2016.files.wordpress.com/2016/01/steal-like-an-artist.pdf"><em>Steal Like an Artist</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Art-Historical Context</td>
-<td>Examines drawing's evolution, informing practice.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/download/in.ernet.dli.2015.29158/2015.29158.The-Story-Of-Art.pdf"><em>The Story of Art</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.khanacademy.org/humanities/art-history">Art history - Khan Academy</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-in-drawing">Advanced Topics in Drawing</h1>
+<p>These tracks branch out from the core curriculum into distinct areas of specialization. Pick one or two that match where you actually want your drawing to go — nobody is expected to work through all of them, and spreading yourself across every track will produce less progress than going deep in one.</p>
+<ul>
+<li><strong>Advanced Figure Drawing &amp; Anatomy</strong> — Moves past basic proportions into structural anatomy, head construction, and building convincing figures from imagination rather than reference.</li>
+<li><strong>Character &amp; Creature Design</strong> — Applies drawing skill to inventing characters and creatures with readable silhouettes, believable anatomy, and design intent.</li>
+<li><strong>Environment &amp; Perspective Design</strong> — Builds the advanced spatial construction needed to draw complex objects, architecture, and whole imagined worlds.</li>
+<li><strong>Visual Storytelling &amp; Sequential Art</strong> — Covers how drawings work in sequence to carry narrative, including comics language, storyboarding, and finished ink work.</li>
+<li><strong>Drawing in Context: Art History &amp; Personal Voice</strong> — Situates your practice within the history of art and helps you move from executing exercises to making work that is recognizably yours.</li>
+</ul>
+<h2 id="advanced-figure-drawing-anatomy">Advanced Figure Drawing &amp; Anatomy</h2>
+<p>Deepens figure work from the core's basic proportions into structural anatomy, head construction, and figure invention.</p>
+<p>Constructive Anatomy: <a href="https://archive.org/details/cu31924014504371" target="_blank" rel="noopener noreferrer">Constructive Anatomy (George B. Bridgman, Internet Archive)</a> - Free, public domain. Treats the body as interlocking masses and wedges rather than surface detail; the standard deep-dive after a beginner's grasp of proportion.</p>
+<p>Figure Invention and Design: <a href="https://books.google.com/books?isbn=9780615272818" target="_blank" rel="noopener noreferrer">Figure Drawing: Design and Invention (Michael Hampton)</a> - Paid (~$35). Teaches simplified surface anatomy specifically so you can build figures from imagination, not just copy a model.</p>
+<p>Head and Portrait Construction: <a href="https://www.proko.com/portrait" target="_blank" rel="noopener noreferrer">Portrait Drawing Fundamentals (Proko)</a> - 16 of the 35 lessons are free, including the full Loomis Method sequence for drawing the head from any angle.</p>
+<h2 id="character-creature-design">Character &amp; Creature Design</h2>
+<p>Applies drawing fundamentals to inventing original characters and creatures that read clearly and hold up anatomically.</p>
+<p>Character Design Principles: <a href="https://www.coursera.org/learn/game-character-design" target="_blank" rel="noopener noreferrer">Character Design for Video Games (CalArts, Coursera)</a> - Free to audit. Four weeks of masterclasses with working designers from Adventure Time, Journey, and SpongeBob, focused on silhouette, expression, and designing with purpose.</p>
+<p>Animal Structure and Gesture: <a href="https://books.google.com/books?isbn=9780971031418" target="_blank" rel="noopener noreferrer">The Weatherly Guide to Drawing Animals (Joe Weatherly)</a> - Paid (~$30). Covers action, form analysis, and simplified animal anatomy — the structural groundwork that creature design depends on.</p>
+<p>Anatomy-Driven Creature Design: <a href="https://books.google.com/books?isbn=9781933492568" target="_blank" rel="noopener noreferrer">Science of Creature Design: Understanding Animal Anatomy (Terryl Whitlatch)</a> - Paid (~$40). Builds directly on the Weatherly book above; Whitlatch (Star Wars, Jumanji) shows how real comparative anatomy makes imaginary creatures believable.</p>
+<p>Applied Design Practice: <a href="https://www.youtube.com/playlist?list=PLgRfjS8fHJA8nAeP4ZyEXXUw0jzZUij_P" target="_blank" rel="noopener noreferrer">Creature Design Lessons (Draw Sessions)</a> - Free, 421 videos. Use this alongside the two books for demonstrations and process work rather than theory.</p>
+<h2 id="environment-perspective-design">Environment &amp; Perspective Design</h2>
+<p>Extends basic perspective into the advanced construction skills needed to draw complex objects, buildings, and imagined environments.</p>
+<p>Constructing from Imagination: <a href="https://books.google.com/books?isbn=9781933492735" target="_blank" rel="noopener noreferrer">How to Draw: Drawing and Sketching Objects and Environments from Your Imagination (Scott Robertson &amp; Thomas Bertling)</a> - Paid (~$40). The standard industry reference for rigorous perspective construction, from basic grids through complex curved forms.</p>
+<p>Advanced Perspective Theory: <a href="https://www.proko.com/course/the-perspective-course" target="_blank" rel="noopener noreferrer">The Perspective Course (Marshall Vandruff, Proko)</a> - 23 lessons are free. More conceptual than Robertson above; useful for understanding <em>why</em> perspective behaves as it does rather than only how to construct it.</p>
+<p>Concept Design Thinking: <a href="https://www.youtube.com/@FZDSCHOOL" target="_blank" rel="noopener noreferrer">FZD School of Design (Feng Zhu)</a> - Free. The full Design Cinema series, in which Feng Zhu talks through professional environment and entertainment design decisions in real time.</p>
+<p>Environment Drawing Practice: <a href="https://www.youtube.com/playlist?list=PL4yGgJ_0LkkC4o6Bn69R9zXYGJhX0U7Nl" target="_blank" rel="noopener noreferrer">Environment design tutorials (Hapax Art)</a> - Free, 24 videos. Hands-on demonstrations to work through after the construction material above.</p>
+<h2 id="visual-storytelling-sequential-art">Visual Storytelling &amp; Sequential Art</h2>
+<p>Covers how images work in sequence to carry a narrative, and the finished mark-making that published sequential work demands.</p>
+<p>Comics Theory and Visual Language: <a href="https://books.google.com/books?isbn=9780060976255" target="_blank" rel="noopener noreferrer">Understanding Comics: The Invisible Art (Scott McCloud)</a> - Paid (~$25). The seminal analysis of how panels, gutters, and closure create meaning; foundational for anyone drawing narrative sequences.</p>
+<p>Storyboarding and Story Structure: <a href="https://www.khanacademy.org/computing/pixar" target="_blank" rel="noopener noreferrer">Pixar in a Box (Khan Academy)</a> - Free. Work through "The Art of Storytelling" unit, which covers visual language, film grammar, and storyboarding with Pixar story artists.</p>
+<p>Ink Technique for Finished Work: <a href="https://books.google.com/books?isbn=9780997046533" target="_blank" rel="noopener noreferrer">Pen &amp; Ink Drawing: A Simple Guide (Alphonso Dunn)</a> - Paid (~$20). Strokes, pen control, and texture-building — the craft layer that turns a good sequential drawing into a publishable one.</p>
+<h2 id="drawing-in-context-art-history-personal-voice">Drawing in Context: Art History &amp; Personal Voice</h2>
+<p>Places your practice within art history and shifts the focus from completing exercises to developing work with a recognizable personal direction.</p>
+<p>Art-Historical Survey: <a href="https://www.khanacademy.org/humanities/art-history" target="_blank" rel="noopener noreferrer">Art History (Khan Academy)</a> - Free. A broad chronological survey; use it to build the visual vocabulary that informs your own choices.</p>
+<p>Modern and Contemporary Context: <a href="https://www.coursera.org/learn/modern-art-ideas" target="_blank" rel="noopener noreferrer">Modern Art &amp; Ideas (The Museum of Modern Art, Coursera)</a> - Free to audit. A thematic complement to the Khan survey above, focused on how artists respond to identity, place, and society rather than on chronology.</p>
+<p>Developing a Personal Voice: <a href="https://books.google.com/books?isbn=9780761169253" target="_blank" rel="noopener noreferrer">Steal Like an Artist (Austin Kleon)</a> - Paid (~$15). A short, practical argument for building an original style through deliberate influence rather than waiting for inspiration.</p>
+    </article>
+  </main>
 
 </body>
 </html>

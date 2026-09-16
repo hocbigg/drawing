@@ -1,263 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Drawing</title>
-<link rel="stylesheet" href="/drawing/style.css">
-<meta name="description" content="Path to a free self-taught education in Drawing!">
+  <title>Hocbigg - Drawing</title>
+  <meta name="description" content="Path to a free self-taught education in Drawing!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/drawing/">
+  <link rel="canonical" href="https://hocbigg.github.io/drawing/">
+  <meta property="og:title" content="Hocbigg - Drawing">
+  <meta property="og:description" content="Path to a free self-taught education in Drawing!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/drawing/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Drawing">
-<meta property="og:description" content="Path to a free self-taught education in Drawing!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/drawing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/drawing/">Drawing</a>
-<a href="/drawing/advanced_topics.html">Advanced Topics</a>
-<a href="/drawing/projects.html">Projects</a>
-<a href="/drawing/extras/courses.html">Extra Courses</a>
-<a href="/drawing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/drawing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/drawing/">Drawing</a></li>
+      <li><a href="/drawing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/drawing/projects.html">Projects</a></li>
+      <li><a href="/drawing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/drawing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/drawing/extras/other_curricula.html">Other Curricula</a></li>
+      <li><a href="https://github.com/hocbigg/drawing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Drawing</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-16">2026-09-16</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Drawing is both a discipline of observation and a method of construction: it trains the eye to analyze spatial relationships and the hand to represent three-dimensional form on a flat surface. Whether your ultimate objective is fine art, illustration, concept design, or visual communication, drawing serves as the foundational grammar for almost all visual media. </p>
+<p>This curriculum is designed for independent, self-directed study and assumes no prior drawing experience. Progress in drawing relies on deliberate motor control, spatial reasoning, and perceptual training rather than innate talent. All exercises can be completed with minimal, accessible equipment — pencil, pen, paper, and an eraser.</p>
+<h3 id="how-to-approach-the-material">How to Approach the Material</h3>
+<p>While drawing skills reinforce one another continuously rather than developing in total isolation, the curriculum is arranged in a functional order of progression:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Construction and Observation:</strong> Begin with <em>Fundamentals of Line, Shape, Form, and Construction</em> and <em>Observational Drawing and Still Life</em>. These train your motor coordination, line confidence, and sighting techniques (measuring angles, proportions, and alignments accurately from life).</li>
+<li><strong>Space and Volume:</strong> Move into <em>Perspective</em> and <em>Value, Light, and Shading</em>. Perspective establishes the geometric rules required to place objects believably in deep space, while value and light mechanics give flat shapes three-dimensional mass and depth.</li>
+<li><strong>The Figure:</strong> When approaching the human form, practice <em>Gesture Drawing</em> before or alongside <em>Human Anatomy Fundamentals</em>. Capturing rhythm, motion, and weight first ensures your figure drawings remain dynamic rather than becoming stiff or overworked once skeletal and muscular landmarks are applied.</li>
+<li><strong>Arrangement:</strong> Study <em>Composition</em> to understand how to combine individual objects, values, and figures into readable, intentional visual arrangements.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Drawing curriculum is a comprehensive education in Drawing, designed for self-directed study using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
-<ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
-</ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="next-steps">Next Steps</h3>
+<p>This curriculum focuses strictly on core representational mechanics — line, volume, proportion, light, and structure. It does not attempt to cover stylized aesthetics, medium-specific techniques (such as painting or digital software), or complete portfolio development. </p>
+<p>Once you have established consistent competence across these fundamental areas, explore <a href="advanced_topics.html">Advanced Topics</a> for specialized disciplines, apply your skills to practical work through <a href="projects.html">Projects</a>, or consult <a href="extras/readings.html">Readings</a> and <a href="extras/courses.html">Courses</a> for further theoretical depth and extended visual demonstrations.</p>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.wetcanvas.com/forums-index/">WetCanvas</a> (active traditional art forums with drawing sections and critiques)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://creativespark.art/">Creative Spark</a> (artist discussion forum, successor vibe to older sites)</li>
+<li><a href="https://www.wetcanvas.com/forums-index/" target="_blank" rel="noopener noreferrer">WetCanvas</a> (active traditional art forums with drawing sections and critiques)</li>
+<li><a href="https://creativespark.art/" target="_blank" rel="noopener noreferrer">Creative Spark</a> (artist discussion forum, successor vibe to older sites)</li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/learnart/">r/learnart</a> (focused on learning and constructive critiques)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/learntodraw/">r/learntodraw</a> (beginner-friendly drawing help and feedback)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/drawing/">r/drawing</a> (sharing techniques, practice, and critiques)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/ArtCrit/">r/ArtCrit</a> (dedicated to constructive criticism)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/ArtFundamentals/">r/ArtFundamentals</a> (Drawabox community for structured feedback)</li>
+<li><a href="https://www.reddit.com/r/learnart/" target="_blank" rel="noopener noreferrer">r/learnart</a> (focused on learning and constructive critiques)</li>
+<li><a href="https://www.reddit.com/r/learntodraw/" target="_blank" rel="noopener noreferrer">r/learntodraw</a> (beginner-friendly drawing help and feedback)</li>
+<li><a href="https://www.reddit.com/r/drawing/" target="_blank" rel="noopener noreferrer">r/drawing</a> (sharing techniques, practice, and critiques)</li>
+<li><a href="https://www.reddit.com/r/ArtCrit/" target="_blank" rel="noopener noreferrer">r/ArtCrit</a> (dedicated to constructive criticism)</li>
+<li><a href="https://www.reddit.com/r/ArtFundamentals/" target="_blank" rel="noopener noreferrer">r/ArtFundamentals</a> (Drawabox community for structured feedback)</li>
 </ul>
 </li>
 <li>Discord servers:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/drawabox">Drawabox Official Discord</a> (structured critiques tied to lessons)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/nma">New Masters Academy Discord</a> (open to all, focused on serious art study and feedback)</li>
+<li><a href="https://discord.gg/drawabox" target="_blank" rel="noopener noreferrer">Drawabox Official Discord</a> (structured critiques tied to lessons)</li>
+<li><a href="https://discord.gg/nma" target="_blank" rel="noopener noreferrer">New Masters Academy Discord</a> (open to all, focused on serious art study and feedback)</li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/drawing/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/drawing/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="fundamentals-of-line-shape-form-and-construction">Fundamentals of Line, Shape, Form, and Construction</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Basic Drawing &amp; Form</td>
-<td>Build confidence in lines, understand 3D forms, and develop constructive thinking essential for all drawing.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Drawing-Right-Side-Brain-Definitive/dp/1585429201"><em>Drawing on the Right Side of the Brain</em></a> OR <a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/The_Natural_Way_To_Draw_by_Kimon_Nicolaides/"><em>The Natural Way to Draw</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://drawabox.com/lesson/0">DrawABox - Part One: The Basics</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="observational-drawing-and-still-life">Observational Drawing and Still Life</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Observational Drawing Fundamentals</td>
-<td>Develops seeing and recording skills, training the eye to capture reality accurately as the basis for all drawing.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Keys-Drawing-Bert-Dodson/dp/0891343377"><em>Keys to Drawing</em></a> by Bert Dodson</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.nma.art/courses/fundamentals-of-drawing-and-perspective">New Masters Academy - Fundamentals of Drawing</a> OR DrawABox observational extensions</td>
-</tr>
-</tbody>
-</table>
-<h2 id="gesture-drawing">Gesture Drawing</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Gesture Drawing</td>
-<td>Capture movement, energy, and pose quickly; foundational for dynamic figures.</td>
-<td></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.proko.com/">Proko - Gesture Basics</a> + <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLQOGKNmiKFwVNYwIlrUIlmGFT2QlB9hVz">S. Michael Hampton Gesture</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="perspective">Perspective</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Perspective</td>
-<td>Create convincing 3D space; critical for placing forms believably.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/PerspectiveMadeEasy"><em>Perspective Made Easy</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLCIGm6amaRzvTt8TGNekIOWBf7oHC6DA0">moderndayjames Perspective series</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="human-anatomy-fundamentals">Human Anatomy Fundamentals</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Basic Human Anatomy</td>
-<td>Understand structure and proportions for believable figures.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/FigureDrawingForAllItsWorth"><em>Figure Drawing for All It's Worth</em></a> by Andrew Loomis (free)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLg3tq-SuqiTlyL1pZDwNxSnCTGBZOiHvn">PROKO ANATOMY TUTORIALS</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="value-light-and-shading">Value, Light, and Shading</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Value and Shading</td>
-<td>Master value to create volume and illusion of form.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Light-Shade-Shadow-Dover-Instruction/dp/0486468852"><em>Light, Shade and Shadow</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLhBKkQX9XSgf6zt8NbD1FNWTF6FLoRXZN">Shading - Alphonso Dunn</a> OR Proko shading</td>
-</tr>
-<tr>
-<td>Light and Shadow</td>
-<td>Understand how light creates predictable patterns for realistic 3D illusion.</td>
-<td></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://willkempartschool.com/a-beginners-guide-to-shadow-light-part-1-drawing/">A Beginners Guide to Light &amp; Shadow</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="color-theory">Color Theory</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Color Theory</td>
-<td>Understand hue, saturation, value, and harmony for effective color use.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Color-Light-Guide-Realistic-Painting/dp/0740797719"><em>Color and Light</em></a> by James Gurney</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PL002hNYqg1VjoRaboVhLbbCPR_0i2xUxV">Marco Bucci Color</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="composition">Composition</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Composition</td>
-<td>Arrange elements to guide the eye and create impactful images.</td>
-<td></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLVbzq9Kgoo1IsIldx9uHu2M2OHdJW-fhm">Art Lessons: Composition - ArtOfSoulburn</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="congratulations">Congratulations</h2>
-<p>After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Drawing.
-Congratulations!</p>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="fundamentals-of-line-shape-and-form">Fundamentals of Line, Shape, and Form</h3>
+<p>Builds confident, controlled line work and teaches you to see and construct any subject from simple 3D forms (boxes, cylinders, spheres) — the foundation everything else in drawing is built on.</p>
+<p><a href="https://books.google.com/books?isbn=9781585429202" target="_blank" rel="noopener noreferrer">Drawing on the Right Side of the Brain (Betty Edwards)</a> - An alternative to the Nicolaides book below; focuses on retraining visual perception and is gentler for beginners who feel mentally blocked about drawing.</p>
+<p><a href="https://archive.org/details/The_Natural_Way_To_Draw_by_Kimon_Nicolaides/" target="_blank" rel="noopener noreferrer">The Natural Way to Draw (Kimon Nicolaides)</a> - Free. An alternative to the Edwards book above; a more rigorous, structured year-long practice program built around gesture and contour studies from observation.</p>
+<p><a href="https://drawabox.com/lesson/0" target="_blank" rel="noopener noreferrer">Lesson 0: Getting Started (DrawABox)</a> - Free. Complements either book above with hands-on line-control and warm-up exercises, including guidance on basic tools and materials.</p>
+<h3 id="perspective">Perspective</h3>
+<p>Teaches how to represent three-dimensional space convincingly using vanishing points and horizon lines, so objects and scenes read as believable in depth.</p>
+<p><a href="https://archive.org/details/PerspectiveMadeEasy" target="_blank" rel="noopener noreferrer">Perspective Made Easy (Ernest Norling)</a> - Free, public domain. A classic, systematic primer covering one-, two-, and three-point perspective.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLCIGm6amaRzvTt8TGNekIOWBf7oHC6DA0" target="_blank" rel="noopener noreferrer">Perspective (moderndayjames)</a> - Free video playlist. Complements the book with visual walkthroughs of the same core concepts.</p>
+<p><a href="https://drawabox.com/lesson/RWRIQI46" target="_blank" rel="noopener noreferrer">250 Box Challenge (DrawABox)</a> - 250 boxes drawn in free rotation, submitted for critique from DrawABox's community. Do this after the theory above, not instead of it.</p>
+<h3 id="value-light-and-shadow">Value, Light, and Shadow</h3>
+<p>Covers how light behaves on a form and how translating that into value (light versus dark) creates the illusion of volume and depth on a flat page.</p>
+<p><a href="https://books.google.com/books?isbn=9780486468853" target="_blank" rel="noopener noreferrer">Light, Shade and Shadow (E. L. Koller)</a> - Inexpensive classic reference explaining light-on-form principles, from simple geometric shapes through to the human figure.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLhBKkQX9XSgf6zt8NbD1FNWTF6FLoRXZN" target="_blank" rel="noopener noreferrer">Shading (Alphonso Dunn)</a> - Free video playlist. Complements the book by demonstrating hands-on shading techniques like hatching and blending.</p>
+<p><a href="https://willkempartschool.com/a-beginners-guide-to-shadow-light-part-1-drawing/" target="_blank" rel="noopener noreferrer">A Beginner's Guide to Light &amp; Shadow (Will Kemp Art School)</a> - Free article. A short, clear explanation of "light logic" that works well as a conceptual summary alongside the two resources above.</p>
+<p><a href="https://www.ctrlpaint.com/library" target="_blank" rel="noopener noreferrer">Ctrl+Paint Free Library</a> - Look for "Form, Value, and Light" and "Sketching with Values" in the Traditional Drawing / Basic Painting Techniques sections — short videos each paired with a homework assignment, plus a critique video series.</p>
+<h3 id="observational-drawing-fundamentals">Observational Drawing Fundamentals</h3>
+<p>Develops the skill of seeing and recording what's actually in front of you, training the eye to capture reality accurately rather than drawing from assumption.</p>
+<p><a href="https://books.google.com/books?isbn=9780891343370" target="_blank" rel="noopener noreferrer">Keys to Drawing (Bert Dodson)</a> - Fifty-five practical "keys" and exercises for drawing any subject with confidence, aimed squarely at beginners.</p>
+<p><a href="https://drawabox.com/lesson/6" target="_blank" rel="noopener noreferrer">Lesson 6: Applying Construction to Everyday Objects (DrawABox)</a> - Free. Complements the book with hands-on practice applying construction skills to real household objects as still-life subjects.</p>
+<h3 id="proportion-sighting-techniques">Proportion &amp; Sighting Techniques</h3>
+<p>Trains accurate visual measurement — comparing angles, distances, and units by eye — a core prerequisite for representational accuracy in any subject.</p>
+<p><a href="https://www.youtube.com/watch?v=AzDGO0LssEM" target="_blank" rel="noopener noreferrer">How to Draw Accurate Proportions (Proko)</a> - Free video covering measuring, sighting, and self-critique techniques.</p>
+<p><a href="https://www.ctrlpaint.com/library" target="_blank" rel="noopener noreferrer">Ctrl+Paint Free Library</a> - Look for "Visual Measuring" and "Visual Measuring: Proportion" — short practice-driven videos with assignments, complementing the Proko explainer above.</p>
+<h3 id="gesture-drawing">Gesture Drawing</h3>
+<p>Captures movement, energy, and pose quickly using a few confident lines — foundational for drawing any dynamic figure later on.</p>
+<p><a href="https://nma.art/drawingmanual" target="_blank" rel="noopener noreferrer">Vilppu Drawing Manual (Glenn Vilppu)</a> - Paid (~$40–60). Widely regarded as the canonical gesture-drawing manual; a worthwhile deeper investment once you've tried the free option below.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLQOGKNmiKFwVNYwIlrUIlmGFT2QlB9hVz" target="_blank" rel="noopener noreferrer">Gesture Drawing (Steven Michael Hampton)</a> - Free, 24-video playlist. A full alternative to the paid manual above if you'd rather start without spending money.</p>
+<p><a href="https://line-of-action.com" target="_blank" rel="noopener noreferrer">Line of Action</a> - Timed figure-pose sessions plus a discussion/critique section. Use this daily alongside the instructional resources above, not after finishing them.</p>
+<h3 id="human-anatomy-fundamentals">Human Anatomy Fundamentals</h3>
+<p>Covers the skeletal and muscular structure and proportions needed to draw believable human figures.</p>
+<p><a href="https://archive.org/details/andrewloomiscreative.illustration" target="_blank" rel="noopener noreferrer">Figure Drawing for All It's Worth (Andrew Loomis)</a> - Free, public domain (part of a compiled Andrew Loomis collection on Internet Archive — look for the "Figure Drawing for all it's Worth" file within it). A systematic, classic reference.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLg3tq-SuqiTlyL1pZDwNxSnCTGBZOiHvn" target="_blank" rel="noopener noreferrer">Proko Anatomy Tutorials</a> - Free playlist. Complements the book with visual demonstrations of the same skeletal and muscular concepts.</p>
+<h3 id="composition">Composition</h3>
+<p>Covers how to arrange the elements of a drawing to guide the viewer's eye and create an impactful, readable image.</p>
+<p><a href="https://books.google.com/books?isbn=9781933492957" target="_blank" rel="noopener noreferrer">Framed Ink: Drawing &amp; Composition for Visual Storytellers (Marcos Mateu-Mestre)</a> - Approaches composition through narrative/cinematic staging — a practical, widely-used text, though angled toward visual storytelling.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLVbzq9Kgoo1IsIldx9uHu2M2OHdJW-fhm" target="_blank" rel="noopener noreferrer">Art Lessons: Composition (ArtOfSoulburn)</a> - Free, 11-video playlist. Complements the book with more classical compositional theory — balance, focal points, the rule of thirds.</p>
+<p><a href="https://www.ctrlpaint.com/library" target="_blank" rel="noopener noreferrer">Ctrl+Paint Free Library</a> - Look for "Composition Basics" — short structured exercises to practice alongside the theory above.</p>
+    </article>
+  </main>
 
 </body>
 </html>

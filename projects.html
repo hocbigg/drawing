@@ -1,147 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/drawing/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/drawing/">
+  <link rel="canonical" href="https://hocbigg.github.io/drawing/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/drawing/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/drawing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/drawing/">Drawing</a>
-<a href="/drawing/advanced_topics.html">Advanced Topics</a>
-<a href="/drawing/projects.html">Projects</a>
-<a href="/drawing/extras/courses.html">Extra Courses</a>
-<a href="/drawing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/drawing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/drawing/">Drawing</a></li>
+      <li><a href="/drawing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/drawing/projects.html">Projects</a></li>
+      <li><a href="/drawing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/drawing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/drawing/extras/other_curricula.html">Other Curricula</a></li>
+      <li><a href="https://github.com/hocbigg/drawing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Drawing through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
+<p>This curated directory collects step-by-step project walkthroughs, practical guides, and production workflows for self-directed learners in drawing. Rather than following arbitrary difficulty tiers, select projects aligned with the specific visual artifacts you want to produce.</p>
 <ul>
-<li><a href="#draw-your-own-still-life">Still Life</a></li>
-<li><a href="#draw-your-own-figure-study">Figure Study</a></li>
-<li><a href="#draw-your-own-portrait">Portrait</a></li>
-<li><a href="#draw-your-own-landscape">Landscape</a></li>
-<li><a href="#draw-your-own-anatomical-diagram">Anatomical Diagram</a></li>
-<li><a href="#draw-your-own-perspective-construction">Perspective Construction</a></li>
-<li><a href="#draw-your-own-architectural-rendering">Architectural Rendering</a></li>
-<li><a href="#draw-your-own-technical-illustration">Technical Illustration</a></li>
-<li><a href="#draw-your-own-comic-panel-sequence">Comic Panel Sequence</a></li>
-<li><a href="#draw-your-own-storybook-illustration">Storybook Illustration</a></li>
-<li><a href="#draw-your-own-concept-art-piece">Concept Art Piece</a></li>
-<li><a href="#draw-your-own-character-design-sheet">Character Design Sheet</a></li>
-<li><a href="#draw-your-own-editorial-cartoon">Editorial Cartoon</a></li>
-<li><a href="#draw-your-own-scientific-illustration">Scientific Illustration</a></li>
-<li><a href="#draw-your-own-gesture-drawing-series">Gesture Drawing Series</a></li>
-<li><a href="#draw-your-own-expressive-sketchbook-page">Expressive Sketchbook Page</a></li>
+<li><a href="#draw-your-own-still-life">still life</a></li>
+<li><a href="#draw-your-own-figure-study">figure study</a></li>
+<li><a href="#render-your-own-plaster-cast-study">plaster cast study</a></li>
+<li><a href="#draw-your-own-tonal-portrait">tonal portrait</a></li>
+<li><a href="#draw-your-own-landscape-composition">landscape composition</a></li>
+<li><a href="#construct-your-own-perspective-boxes">perspective boxes</a></li>
+<li><a href="#draw-your-own-everyday-objects-in-perspective">everyday objects in perspective</a></li>
+<li><a href="#construct-your-own-vehicles-in-perspective">vehicles in perspective</a></li>
+<li><a href="#sketch-your-own-architectural-scene">architectural scene</a></li>
+<li><a href="#design-your-own-character-turnaround-sheet">character turnaround sheet</a></li>
+<li><a href="#draw-your-own-environment-concept-piece">environment concept piece</a></li>
+<li><a href="#illustrate-your-own-sequential-comic-page">sequential comic page</a></li>
+<li><a href="#illustrate-your-own-picture-book-dummy">picture book dummy</a></li>
+<li><a href="#illustrate-your-own-anatomical-specimen">anatomical specimen</a></li>
+<li><a href="#draw-your-own-botanical-plate">botanical plate</a></li>
+<li><a href="#draw-your-own-political-cartoon">political cartoon</a></li>
 </ul>
-<h3 id="still-life">Still Life</h3>
+<h2 id="draw-your-own-still-life">Draw your own still life</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.artistsnetwork.com/art-mediums/draw-a-compelling-still-life-basic-drawing-techniques">Basic Drawing Techniques: Draw a Compelling Still Life in 5 Steps</a> (Article / Tutorial)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://paulpriestleyart.com/drawing-still-life">How to Draw Still Life and improve your drawing techniques</a> (Video series / Tutorial)</li>
+<li><a href="https://paulpriestleyart.com/drawing-still-life" target="_blank" rel="noopener noreferrer">How to Draw Still Life and Improve Your Drawing Techniques (Paul Priestley Art)</a></li>
+<li>Basic Drawing Techniques: Draw a Compelling Still Life in 5 Steps (Steven J. Levin / Artists Network) (search "Basic Drawing Techniques Draw a Compelling Still Life in 5 Steps" on Artists Network)</li>
 </ul>
-<h3 id="figure-study">Figure Study</h3>
+<h2 id="draw-your-own-figure-study">Draw your own figure study</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.thedrawingsource.com/step-by-step-figure-drawing.html">Step by Step Figure Drawing Tutorial</a> (Article / Multi-step guide)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.lovelifedrawing.com/roadmap1">The Figure Drawing Roadmap</a> (Article / Structured lessons)</li>
+<li><a href="https://www.thedrawingsource.com/step-by-step-figure-drawing.html" target="_blank" rel="noopener noreferrer">Step by Step Figure Drawing Tutorial (The Drawing Source)</a></li>
 </ul>
-<h3 id="portrait">Portrait</h3>
+<h2 id="render-your-own-plaster-cast-study">Render your own plaster cast study</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://drawingacademy.com/how-to-draw-a-portrait">How to Draw a Portrait</a> (Article / Step-by-step)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.artistsandillustrators.co.uk/how-to/drawing/how-to-draw-a-portrait-in-pencil">How to draw a portrait in pencil</a> (Article / Tutorial)</li>
+<li><a href="https://www.thedrawingsource.com/cast-drawing.html" target="_blank" rel="noopener noreferrer">Cast Drawing Tutorial: Blocking In and Shading Form (The Drawing Source)</a></li>
 </ul>
-<h3 id="landscape">Landscape</h3>
+<h2 id="draw-your-own-tonal-portrait">Draw your own tonal portrait</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://samuelearp.com/blog/how-to-draw-landscapes">How to Draw Landscapes: Tips for Drawing Trees</a> (Article / Step-by-step)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.studydrawing.com/drawing-tutorial-rocky-oceanfront">Landscape Drawing Tutorial: Rocky Oceanfront</a> (Article / Walkthrough)</li>
+<li><a href="https://www.artistsandillustrators.co.uk/how-to/drawing/how-to-draw-a-portrait-in-pencil/" target="_blank" rel="noopener noreferrer">How to Draw a Portrait in Pencil: Step-by-Step Guide (Lancelot Richardson / Artists &amp; Illustrators)</a></li>
+<li><a href="https://drawingacademy.com/how-to-draw-a-portrait" target="_blank" rel="noopener noreferrer">How to Draw a Portrait in the Three Quarters View (Vladimir London / Drawing Academy)</a></li>
 </ul>
-<h3 id="anatomical-diagram">Anatomical Diagram</h3>
+<h2 id="draw-your-own-landscape-composition">Draw your own landscape composition</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://design.tutsplus.com/articles/human-anatomy-fundamentals-basic-body-proportions--vector-18254">Human Anatomy Fundamentals: Basic Body Proportions</a> (Article / Proportions guide)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.domestika.org/en/blog/11878-anatomical-drawing-tutorial-the-human-figure-step-by-step">Anatomical Drawing Tutorial: the human figure step by step</a> (Article / Expressive anatomy)</li>
+<li><a href="https://samuelearp.com/blog/how-to-draw-landscapes" target="_blank" rel="noopener noreferrer">How to Draw Landscapes: Tips for Drawing Trees and Depth (Samuel Earp)</a></li>
+<li><a href="https://willkempartschool.com/how-to-draw-perspective/" target="_blank" rel="noopener noreferrer">How to Draw Perspective for Beginners: Landscape Depth (Will Kemp Art School)</a></li>
 </ul>
-<h3 id="perspective-construction">Perspective Construction</h3>
+<h2 id="construct-your-own-perspective-boxes">Construct your own perspective boxes</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://thevirtualinstructor.com/foreshortening.html">How to Draw a Figure in Perspective - Foreshortening</a> (Video / Demonstration)</li>
+<li><a href="https://drawabox.com/lesson/250boxes" target="_blank" rel="noopener noreferrer">The 250 Box Challenge: Spatial Reasoning &amp; Convergences (Drawabox)</a></li>
 </ul>
-<h3 id="architectural-rendering">Architectural Rendering</h3>
+<h2 id="draw-your-own-everyday-objects-in-perspective">Draw your own everyday objects in perspective</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://aichat.physics.ucla.edu/index.jsp/papersCollection/MD3AZk/Architectural_Design_With_Sketchup_Component_Based_Modeling_Plugins_Rendering_And_Scripting.pdf">Architectural Design With Sketchup: Component-Based Modeling, Plugins, Rendering</a> (PDF guide) — Demonstrates workflows and component-based rendering processes for practical application.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://humanecology.ucdavis.edu/sites/g/files/dgvnsk161/files/inline-files/MRiha.pdf">DIGITAL RENDERING</a> (PDF handbook) — Explains hybrid rendering techniques with step-by-step instructions for consistent results.</li>
+<li><a href="https://drawabox.com/lesson/6" target="_blank" rel="noopener noreferrer">Lesson 6: Applying Construction to Everyday Objects (Drawabox)</a></li>
 </ul>
-<h3 id="technical-illustration">Technical Illustration</h3>
+<h2 id="construct-your-own-vehicles-in-perspective">Construct your own vehicles in perspective</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://wikifactory.com/+wikifactory/stories/how-to-create-technical-drawings-in-10-steps">How to Create Technical Drawings in 10 Steps</a> (Article / Guide) — Outlines key design considerations and process for clear technical drawings.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.maaillustrations.com/blogs/magazine/the-beginners-guide-to-technical-illustration">The Beginners' Guide to Technical Illustration</a> (Article) — Describes specialized creation methods and visual representation workflows.</li>
+<li><a href="https://drawabox.com/lesson/7" target="_blank" rel="noopener noreferrer">Lesson 7: Applying Construction to Vehicles (Drawabox)</a></li>
 </ul>
-<h3 id="comic-panel-sequence">Comic Panel Sequence</h3>
+<h2 id="sketch-your-own-architectural-scene">Sketch your own architectural scene</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.clipstudio.net/how-to-draw/archives/160963">Pro Artist's Guide to Comic &amp; Manga Layouts, Paneling, Flow</a> (Article / Tutorial) — Teaches impactful paneling and page flow techniques for storytelling.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://design.tutsplus.com/tutorials/create-a-comic-how-to-plan-and-lay-out-your-comic--cms-24179">Create a Comic: How to Plan and Lay Out Your Comic</a> (Tutorial) — Covers storyboarding, panel types, and layout effects.</li>
+<li><a href="https://www.urbansketchcourse.com/urban-sketching-step-by-step/" target="_blank" rel="noopener noreferrer">Urban Sketching: Step-by-Step Location Walkthrough (Ian Fennelly / Urban Sketch Course)</a></li>
+<li>Architectural Drawing Tutorial: How to Make a Good Composition (Alex Hillkurtz / Domestika) (search "Architectural Drawing Tutorial: How to Make a Good Composition" on Domestika)</li>
 </ul>
-<h3 id="storybook-illustration">Storybook Illustration</h3>
+<h2 id="design-your-own-character-turnaround-sheet">Design your own character turnaround sheet</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.artistsandillustrators.co.uk/how-to/illustration/how-to-illustrate-a-childrens-book">How to illustrate a children's book</a> (Article / Process walkthrough) — Details stages of a commission from initial ideas to final illustrations.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://abicushman.com/how-to-articles/how-to-illustrate-a-childrens-book-getting-started-part-1">How to Illustrate a Children's Book: Getting Started (Part 1)</a> (Article) — Models the process from manuscript doodles to page thumbnails.</li>
+<li><a href="https://www.domestika.org/en/blog/5703-what-is-a-turnaround-in-character-design-and-how-to-draw-one" target="_blank" rel="noopener noreferrer">What Is a Turnaround in Character Design and How To Draw One (Domestika)</a></li>
+<li><a href="https://www.21-draw.com/how-to-make-a-character-design-sheet" target="_blank" rel="noopener noreferrer">How to Make a Character Design Sheet (21 Draw)</a></li>
 </ul>
-<h3 id="concept-art-piece">Concept Art Piece</h3>
+<h2 id="draw-your-own-environment-concept-piece">Draw your own environment concept piece</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.evenant.com/articles/painting-environment-concepts-in-no-time">Painting Environment Concepts In No Time</a> (Article / Technique guide) — Explains thumbnailing workflow for rapid idea generation and development.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://retrostylegames.com/blog/how-to-draw-environment-concept-art">How to Draw Environment Concept Art</a> (Article) — Provides tips and tools for creating game environment concepts.</li>
+<li><a href="https://www.evenant.com/articles/painting-environment-concepts-in-no-time" target="_blank" rel="noopener noreferrer">Painting Environment Concepts in No Time: 4-Value Thumbnailing (Evenant)</a></li>
+<li><a href="https://retrostylegames.com/blog/how-to-draw-environment-concept-art" target="_blank" rel="noopener noreferrer">How to Draw Environment Concept Art: Worldbuilding and Staging (RetroStyle Games)</a></li>
 </ul>
-<h3 id="character-design-sheet">Character Design Sheet</h3>
+<h2 id="illustrate-your-own-sequential-comic-page">Illustrate your own sequential comic page</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.domestika.org/en/blog/5703-what-is-a-turnaround-in-character-design-and-how-to-draw-one">What Is a Turnaround in Character Design and How To Draw One</a> (Article / Guide) — Step-by-step process for creating multi-angle character sheets.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.21-draw.com/how-to-make-a-character-design-sheet">How to Make a Character Design Sheet</a> (Article) — Explains required angles and construction for model sheets.</li>
+<li><a href="https://www.clipstudio.net/how-to-draw/archives/160963" target="_blank" rel="noopener noreferrer">Pro Artist's Guide to Comic &amp; Manga Layouts, Paneling, Flow (Clip Studio Art Rocket)</a></li>
+<li><a href="https://design.tutsplus.com/tutorials/create-a-comic-how-to-plan-and-lay-out-your-comic--cms-24179" target="_blank" rel="noopener noreferrer">Create a Comic: How to Plan and Lay Out Your Comic (Sara Berntsson / Envato Tuts+)</a></li>
 </ul>
-<h3 id="editorial-cartoon">Editorial Cartoon</h3>
+<h2 id="illustrate-your-own-picture-book-dummy">Illustrate your own picture book dummy</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.wikihow.com/Make-a-Political-Cartoon">How to Make a Political Cartoon: 14 Steps</a> (Article / Step guide) — Covers planning, symbolism, and execution for opinion-based cartoons.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://thevirtualinstructor.com/blog/drawing-political-cartoons-using-procreate-start-to-finish">Drawing Political Cartoons Using Procreate – Start To Finish</a> (Article / Process) — Demonstrates full workflow from concept to finished piece.</li>
+<li><a href="https://abicushman.com/how-to-articles/how-to-illustrate-a-childrens-book-getting-started-part-1" target="_blank" rel="noopener noreferrer">How to Illustrate a Children's Book: Getting Started (Abi Cushman)</a></li>
 </ul>
-<h3 id="scientific-illustration">Scientific Illustration</h3>
+<h2 id="illustrate-your-own-anatomical-specimen">Illustrate your own anatomical specimen</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://theartofecology.com/2022/10/10/scientific-illustration-step-by-step">Scientific Illustration Step-by-Step</a> (Article / Process) — Details sketching, refining, and rendering stages for accuracy.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://drawbotanical.com/art-of-botanical-illustration">The Art of Scientific Botanical Illustration</a> (Article) — Focuses on morphology, accuracy, and communication in botanical drawing.</li>
+<li><a href="https://theartofecology.com/2022/10/10/scientific-illustration-step-by-step" target="_blank" rel="noopener noreferrer">Scientific Illustration Step-by-Step: Cat Skull Case Study (Marissa Jacobs / The Art of Ecology)</a></li>
 </ul>
-<h3 id="gesture-drawing-series">Gesture Drawing Series</h3>
+<h2 id="draw-your-own-botanical-plate">Draw your own botanical plate</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://line-of-action.com/learn-to-draw">Learn how to draw poses and gestures from references</a> (Interactive / Practice tutorial)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://drawpaintacademy.com/gesture-drawing">Gesture Drawing - The Ultimate Guide For Beginners</a> (Article / Guide) — Explains timed poses and capturing action for repeated practice.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.lovelifedrawing.com/beginner-gesture-drawing-1-seeing-and-respecting-movement">Beginner Gesture Drawing Tutorial 1 - Capturing Movement in the Pose</a> (Tutorial) — Builds mindset and technique for ongoing series work.</li>
+<li><a href="https://drawbotanical.com/art-of-botanical-illustration" target="_blank" rel="noopener noreferrer">The Art of Scientific Botanical Illustration: Morphology &amp; Techniques (Draw Botanical)</a></li>
+<li><a href="https://lizzieharper.co.uk/2016/11/botanical-illustration-step-by-step-painting-of-leaves/" target="_blank" rel="noopener noreferrer">Botanical Illustration: Step by Step Painting of Leaves (Lizzie Harper)</a></li>
 </ul>
-<h3 id="expressive-sketchbook-page">Expressive Sketchbook Page</h3>
+<h2 id="draw-your-own-political-cartoon">Draw your own political cartoon</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=kbEOo4i-dgU">My 16 Best Sketchbook Design Tips</a> (Video) — Shows composition and integration techniques to create engaging pages.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Expressive-Sketchbooks-Developing-Creative-Confidence/dp/163159835X">Expressive Sketchbooks: Developing Creative Skills, Courage, and Confidence</a> (Book description) — Offers mark-making, mixed media, and expressive exercises for page development.</li>
+<li><a href="https://www.wikihow.com/Make-a-Political-Cartoon" target="_blank" rel="noopener noreferrer">How to Make a Political Cartoon: 14 Steps (wikiHow)</a></li>
 </ul>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>
