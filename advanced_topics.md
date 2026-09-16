@@ -1,56 +1,63 @@
-# Advanced Topics
+# Advanced Topics in Drawing
 
-Advanced study in drawing builds upon foundational line, perspective, value, and human anatomy to prepare the artist for specialized creative industries and fine-art disciplines. Learners should select one or two tracks aligned with their specific professional or artistic goals rather than attempting to complete every track simultaneously.
+These tracks branch out from the core curriculum into distinct areas of specialization. Pick one or two that match where you actually want your drawing to go — nobody is expected to work through all of them, and spreading yourself across every track will produce less progress than going deep in one.
 
-- Character and Creature Design: Advanced vertebrate anatomy, speculative animal morphology, drapery physics, and stylized shape language for concept art and animation.
-- Environment Design and Spatial Staging: Complex multi-point perspective, architectural drafting conventions, natural landscape construction, and entertainment worldbuilding.
-- Classical Realism and Atelier Draughtsmanship: Academic 19th-century French atelier training focusing on the sight-size method, Bargue plates, plaster cast drawing, and master copy analysis.
-- Sequential Art and Visual Storytelling: The grammar of graphic storytelling, panel flow, cinematic storyboarding, continuity, and expressive ink work.
+- **Advanced Figure Drawing & Anatomy** — Moves past basic proportions into structural anatomy, head construction, and building convincing figures from imagination rather than reference.
+- **Character & Creature Design** — Applies drawing skill to inventing characters and creatures with readable silhouettes, believable anatomy, and design intent.
+- **Environment & Perspective Design** — Builds the advanced spatial construction needed to draw complex objects, architecture, and whole imagined worlds.
+- **Visual Storytelling & Sequential Art** — Covers how drawings work in sequence to carry narrative, including comics language, storyboarding, and finished ink work.
+- **Drawing in Context: Art History & Personal Voice** — Situates your practice within the history of art and helps you move from executing exercises to making work that is recognizably yours.
 
-## Character and Creature Design
+## Advanced Figure Drawing & Anatomy
 
-This track develops the comparative anatomical knowledge, structural draughtsmanship, and design sensibilities needed to invent living characters and creatures from imagination.
+Deepens figure work from the core's basic proportions into structural anatomy, head construction, and figure invention.
 
-Comparative Animal Anatomy: [The Weatherly Guide to Drawing Animals (Joe Weatherly)](https://books.google.com/books?isbn=9780971031418) - Details structural volume, dynamic action lines, and comparative skeletal-muscular anatomy across mammalian and avian species.
+Constructive Anatomy: [Constructive Anatomy (George B. Bridgman, Internet Archive)](https://archive.org/details/cu31924014504371) - Free, public domain. Treats the body as interlocking masses and wedges rather than surface detail; the standard deep-dive after a beginner's grasp of proportion.
 
-Speculative Creature Morphology: [Principles of Creature Design: Creating Imaginary Animals (Terryl Whitlatch / Design Studio Press)](https://books.google.com/books?isbn=9781624650215) - Explains how to synthesize real zoological biology, skeletal structures, and muscular mechanics into believable imaginary fauna.
+Figure Invention and Design: [Figure Drawing: Design and Invention (Michael Hampton)](https://books.google.com/books?isbn=9780615272818) - Paid (~$35). Teaches simplified surface anatomy specifically so you can build figures from imagination, not just copy a model.
 
-Clothed Figure and Drapery: [Drawing People: How to Portray the Clothed Figure (Barbara Bradley / North Light Books)](https://books.google.com/books?isbn=9781581803594) - Systematically analyzes the forces of gravity, tension, and compression governing the seven primary drapery fold types.
+Head and Portrait Construction: [Portrait Drawing Fundamentals (Proko)](https://www.proko.com/portrait) - 16 of the 35 lessons are free, including the full Loomis Method sequence for drawing the head from any angle.
 
-Character Design and Shape Language: [The Silver Way: Techniques, Tips, and Tutorials for Effective Character Design (Stephen Silver / Design Studio Press)](https://books.google.com/books?isbn=9781624650345) - Teaches memory drawing, shape association, silhouette clarity, and turnarounds for animation and games.
+## Character & Creature Design
 
-## Environment Design and Spatial Staging
+Applies drawing fundamentals to inventing original characters and creatures that read clearly and hold up anatomically.
 
-This track focuses on the construction of believable architectural, natural, and imagined spaces using advanced perspective and worldbuilding principles.
+Character Design Principles: [Character Design for Video Games (CalArts, Coursera)](https://www.coursera.org/learn/game-character-design) - Free to audit. Four weeks of masterclasses with working designers from Adventure Time, Journey, and SpongeBob, focused on silhouette, expression, and designing with purpose.
 
-Advanced Volumetric Perspective: [How to Draw: Drawing and Sketching Objects and Environments from Your Imagination (Scott Robertson and Thomas Bertling / Design Studio Press)](https://books.google.com/books?isbn=9781933492735) - A rigorous engineering-grade manual for building perspective grids, ellipses, curvilinear space, and complex hard-surface forms.
+Animal Structure and Gesture: [The Weatherly Guide to Drawing Animals (Joe Weatherly)](https://books.google.com/books?isbn=9780971031418) - Paid (~$30). Covers action, form analysis, and simplified animal anatomy — the structural groundwork that creature design depends on.
 
-Architectural Drafting and Spatial Graphics: [Architectural Graphics, 7th Edition (Francis D. K. Ching / Wiley)](https://books.google.com/books?isbn=9781394206247) - Teaches standard orthographic projections, section cuts, paraline axonometrics, and professional architectural rendering conventions.
+Anatomy-Driven Creature Design: [Science of Creature Design: Understanding Animal Anatomy (Terryl Whitlatch)](https://books.google.com/books?isbn=9781933492568) - Paid (~$40). Builds directly on the Weatherly book above; Whitlatch (Star Wars, Jumanji) shows how real comparative anatomy makes imaginary creatures believable.
 
-Landscape and Natural Terrain: [Drawing Scenery: Landscapes and Seascapes (Jack Hamm / Perigee)](https://books.google.com/books?isbn=9780399508066) - Systematically breaks down the compositional geometry and textural shorthand required to draw rocks, trees, water, and skies.
+Applied Design Practice: [Creature Design Lessons (Draw Sessions)](https://www.youtube.com/playlist?list=PLgRfjS8fHJA8nAeP4ZyEXXUw0jzZUij_P) - Free, 421 videos. Use this alongside the two books for demonstrations and process work rather than theory.
 
-Concept Environment Worldbuilding: Design Cinema: Environmental Composition & Worldbuilding (Feng Zhu / FZD School) (search "Design Cinema Environmental Composition" on YouTube) - Industry masterclasses demonstrating visual research, thumbnail staging, atmospheric perspective, and production pipeline workflows.
+## Environment & Perspective Design
 
-## Classical Realism and Atelier Draughtsmanship
+Extends basic perspective into the advanced construction skills needed to draw complex objects, buildings, and imagined environments.
 
-This track covers the rigorous academic drawing curriculum developed in 19th-century European academies and preserved in modern classical ateliers.
+Constructing from Imagination: [How to Draw: Drawing and Sketching Objects and Environments from Your Imagination (Scott Robertson & Thomas Bertling)](https://books.google.com/books?isbn=9781933492735) - Paid (~$40). The standard industry reference for rigorous perspective construction, from basic grids through complex curved forms.
 
-Academic Sight-Size and Flat Copying: [Charles Bargue and Jean-Léon Gérôme: Drawing Course (Gerald M. Ackerman, Ed. / Internet Archive)](https://archive.org/details/CharlesBargueDrawingCourse) - The complete digitized 19th-century French atelier course of 197 lithographic plates designed to cultivate optical accuracy, plumblines, and contour simplification.
+Advanced Perspective Theory: [The Perspective Course (Marshall Vandruff, Proko)](https://www.proko.com/course/the-perspective-course) - 23 lessons are free. More conceptual than Robertson above; useful for understanding *why* perspective behaves as it does rather than only how to construct it.
 
-Plaster Cast Drawing: [Classical Drawing Atelier: A Contemporary Guide to Traditional Studio Practice (Juliette Aristides / Watson-Guptill)](https://books.google.com/books?isbn=9780823006571) - Guides the student through the classical atelier methodology of cast drawing, optical envelope blocking, and subtle tonal modeling.
+Concept Design Thinking: [FZD School of Design (Feng Zhu)](https://www.youtube.com/@FZDSCHOOL) - Free. The full Design Cinema series, in which Feng Zhu talks through professional environment and entertainment design decisions in real time.
 
-Master Study Analysis: [Drawing Lessons from the Great Masters (Robert Beverly Hale / Watson-Guptill)](https://books.google.com/books?isbn=9780823014019) - Dissects 100 historical master drawings to analyze how artists like Michelangelo, Leonardo, and Rembrandt resolved anatomical landmarks, mass, and planes.
+Environment Drawing Practice: [Environment design tutorials (Hapax Art)](https://www.youtube.com/playlist?list=PL4yGgJ_0LkkC4o6Bn69R9zXYGJhX0U7Nl) - Free, 24 videos. Hands-on demonstrations to work through after the construction material above.
 
-Sight-Size Studio Setup and Execution: [Best Technique for Realistic Drawing / Painting - Sight-Size Method (Florent Farges Arts / YouTube)](https://www.youtube.com/watch?v=wiUFUHdNIsM) - A comprehensive technical walkthrough on arranging the easel, subject, plumb line, and optical vantage point for sight-size drawing from life.
+## Visual Storytelling & Sequential Art
 
-## Sequential Art and Visual Storytelling
+Covers how images work in sequence to carry a narrative, and the finished mark-making that published sequential work demands.
 
-This track prepares the draughtsperson to communicate narrative, drama, and movement across consecutive frames in comics, graphic novels, and storyboards.
+Comics Theory and Visual Language: [Understanding Comics: The Invisible Art (Scott McCloud)](https://books.google.com/books?isbn=9780060976255) - Paid (~$25). The seminal analysis of how panels, gutters, and closure create meaning; foundational for anyone drawing narrative sequences.
 
-Cinematic Storyboarding: [Pixar in a Box: The Art of Storytelling (Khan Academy & Pixar Animation Studios)](https://www.khanacademy.org/computing/pixar/storytelling) - An open online course covering visual grammar, camera movement, emotional beats, and the iterative storyboarding pipeline.
+Storyboarding and Story Structure: [Pixar in a Box (Khan Academy)](https://www.khanacademy.org/computing/pixar) - Free. Work through "The Art of Storytelling" unit, which covers visual language, film grammar, and storyboarding with Pixar story artists.
 
-Sequential Visual Language: [Comics and Sequential Art: Principles and Practices from the Legendary Cartoonist (Will Eisner / W. W. Norton)](https://books.google.com/books?isbn=9780393331264) - The definitive theoretical treatise analyzing panel borders, gutter transitions, encapsulation of time, and structural graphic narrative.
+Ink Technique for Finished Work: [Pen & Ink Drawing: A Simple Guide (Alphonso Dunn)](https://books.google.com/books?isbn=9780997046533) - Paid (~$20). Strokes, pen control, and texture-building — the craft layer that turns a good sequential drawing into a publishable one.
 
-Expressive Comic Inking: [The DC Comics Guide to Inking Comics (Klaus Janson / Internet Archive)](https://archive.org/details/dccomicsguideto0000jans) - A studio-level technical guide detailing dip pen and brush handling, line weight modulation, contour feathering, and spotting blacks.
+## Drawing in Context: Art History & Personal Voice
 
-Visual Continuity and Page Architecture: [Making Comics: Storytelling Secrets of Comics, Manga and Graphic Novels (Scott McCloud / William Morrow)](https://books.google.com/books?isbn=9780060780944) - Analyzes panel-to-panel transitions, reader eye tracking, facial micro-expressions, and spatial clarity across graphic sequences.
+Places your practice within art history and shifts the focus from completing exercises to developing work with a recognizable personal direction.
+
+Art-Historical Survey: [Art History (Khan Academy)](https://www.khanacademy.org/humanities/art-history) - Free. A broad chronological survey; use it to build the visual vocabulary that informs your own choices.
+
+Modern and Contemporary Context: [Modern Art & Ideas (The Museum of Modern Art, Coursera)](https://www.coursera.org/learn/modern-art-ideas) - Free to audit. A thematic complement to the Khan survey above, focused on how artists respond to identity, place, and society rather than on chronology.
+
+Developing a Personal Voice: [Steal Like an Artist (Austin Kleon)](https://books.google.com/books?isbn=9780761169253) - Paid (~$15). A short, practical argument for building an original style through deliberate influence rather than waiting for inspiration.
