@@ -202,3 +202,12 @@ A compiled collection of free (and some paid) resources for learning drawing, di
 ### Materials
 
 - [C1 Recycled Sketchbook](http://www.cottonwoodarts.com/collections/recycled-sketchbooks/products/recycled-sketchbook-c1) - Recycled-paper sketchbook for practice.
+
+## Source
+
+- [Collection of the best free online resources for learning Digital Art](https://www.reddit.com/r/DigitalArt/comments/k4hk8g/collection_of_the_best_free_online_resources_for/)
+- [What are some of the best resources for learning to draw/sketch?](https://www.reddit.com/r/Illustration/comments/2t3tq2/what_are_some_of_the_best_resources_for_learning/)
+- [`MasqueradeOfSilence/personal-curriculum`](https://github.com/MasqueradeOfSilence/personal-curriculum/blob/main/ART.md)
+- [`CianciuStyles/knowledge`](https://github.com/CianciuStyles/knowledge/blob/master/l/learning/drawing.md)
+- [`aahan/Learn To Draw`](https://gist.github.com/aahan/5993958#file-learn-to-draw-md)
+- [`jaimeiniesta/digital-tablet-tips`](https://gist.github.com/jaimeiniesta/f4d4f6ab14952d14dcf6)
