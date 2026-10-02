@@ -5,7 +5,7 @@ description: Path to a free self-taught education in Drawing!
 
 ## Introduction
 
-Drawing is both a discipline of observation and a method of construction: it trains the eye to analyze spatial relationships and the hand to represent three-dimensional form on a flat surface. Whether your ultimate objective is fine art, illustration, concept design, or visual communication, drawing serves as the foundational grammar for almost all visual media. 
+Drawing is both a discipline of observation and a method of construction: it trains the eye to analyze spatial relationships and the hand to represent three-dimensional form on a flat surface. Whether your ultimate objective is fine art, illustration, concept design, or visual communication, drawing serves as the foundational grammar for almost all visual media.
 
 This curriculum is designed for independent, self-directed study and assumes no prior drawing experience. Progress in drawing relies on deliberate motor control, spatial reasoning, and perceptual training rather than innate talent. All exercises can be completed with minimal, accessible equipment — pencil, pen, paper, and an eraser.
 

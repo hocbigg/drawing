@@ -4,22 +4,22 @@
 
 This curated directory collects step-by-step project walkthroughs, practical guides, and production workflows for self-directed learners in drawing. Rather than following arbitrary difficulty tiers, select projects aligned with the specific visual artifacts you want to produce.
 
-* [still life](#draw-your-own-still-life)
-* [figure study](#draw-your-own-figure-study)
-* [plaster cast study](#render-your-own-plaster-cast-study)
-* [tonal portrait](#draw-your-own-tonal-portrait)
-* [landscape composition](#draw-your-own-landscape-composition)
-* [perspective boxes](#construct-your-own-perspective-boxes)
-* [everyday objects in perspective](#draw-your-own-everyday-objects-in-perspective)
-* [vehicles in perspective](#construct-your-own-vehicles-in-perspective)
-* [architectural scene](#sketch-your-own-architectural-scene)
-* [character turnaround sheet](#design-your-own-character-turnaround-sheet)
-* [environment concept piece](#draw-your-own-environment-concept-piece)
-* [sequential comic page](#illustrate-your-own-sequential-comic-page)
-* [picture book dummy](#illustrate-your-own-picture-book-dummy)
-* [anatomical specimen](#illustrate-your-own-anatomical-specimen)
-* [botanical plate](#draw-your-own-botanical-plate)
-* [political cartoon](#draw-your-own-political-cartoon)
+- [still life](#draw-your-own-still-life)
+- [figure study](#draw-your-own-figure-study)
+- [plaster cast study](#render-your-own-plaster-cast-study)
+- [tonal portrait](#draw-your-own-tonal-portrait)
+- [landscape composition](#draw-your-own-landscape-composition)
+- [perspective boxes](#construct-your-own-perspective-boxes)
+- [everyday objects in perspective](#draw-your-own-everyday-objects-in-perspective)
+- [vehicles in perspective](#construct-your-own-vehicles-in-perspective)
+- [architectural scene](#sketch-your-own-architectural-scene)
+- [character turnaround sheet](#design-your-own-character-turnaround-sheet)
+- [environment concept piece](#draw-your-own-environment-concept-piece)
+- [sequential comic page](#illustrate-your-own-sequential-comic-page)
+- [picture book dummy](#illustrate-your-own-picture-book-dummy)
+- [anatomical specimen](#illustrate-your-own-anatomical-specimen)
+- [botanical plate](#draw-your-own-botanical-plate)
+- [political cartoon](#draw-your-own-political-cartoon)
 
 ## Draw your own still life
 
@@ -74,7 +74,7 @@ This curated directory collects step-by-step project walkthroughs, practical gui
 ## Illustrate your own sequential comic page
 
 - [Pro Artist's Guide to Comic & Manga Layouts, Paneling, Flow (Clip Studio Art Rocket)](https://www.clipstudio.net/how-to-draw/archives/160963)
-- [Create a Comic: How to Plan and Lay Out Your Comic (Sara Berntsson / Envato Tuts+)](https://design.tutsplus.com/tutorials/create-a-comic-how-to-plan-and-lay-out-your-comic--cms-24179)
+- [Create a Comic: How to Plan and Lay Out Your Comic (Sara Berntsson / Envato Tuts+)](https://design.tutsplus.com/tutorials/create-a-comic-how-to-plan-and-lay-out-your-comic-cms-24179)
 
 ## Illustrate your own picture book dummy
 
