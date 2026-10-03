@@ -2,16 +2,18 @@
 
 A compiled collection of free (and some paid) resources for learning drawing, digital painting, and 3D art.
 
-- [Fundamentals & General Courses](#fundamentals--general-courses)
+Table Of Contents:
+
+- [Fundamentals & General Courses](#fundamentals-general-courses)
 - [YouTube Channels](#youtube-channels)
-- [Figure & Pose Drawing Tools](#figure--pose-drawing-tools)
-- [Challenges & Communities](#challenges--communities)
-- [Warm-ups & Daily Practice](#warm-ups--daily-practice)
-- [Anatomy & Figure Drawing (Books & PDFs)](#anatomy--figure-drawing-books--pdfs)
+- [Figure & Pose Drawing Tools](#figure-pose-drawing-tools)
+- [Challenges & Communities](#challenges-communities)
+- [Warm-ups & Daily Practice](#warm-ups-daily-practice)
+- [Anatomy & Figure Drawing (Books & PDFs)](#anatomy-figure-drawing-books--pdfs)
 - [Books](#books)
 - [2D Art - Specialized Topics](#2d-art---specialized-topics)
-- [3D Art & VFX](#3d-art--vfx)
-- [Supplies & Stock Resources](#supplies--stock-resources)
+- [3D Art & VFX](#3d-art-vfx)
+- [Supplies & Stock Resources](#supplies-stock-resources)
   - [Textures](#textures)
   - [Stock Photos](#stock-photos)
   - [Materials](#materials)
