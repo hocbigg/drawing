@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Art &amp; Drawing Resources</title>
+  <meta name="description" content="Art &amp; Drawing Resources curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/drawing/resources.html">
+  <meta property="og:title" content="Art &amp; Drawing Resources">
+  <meta property="og:description" content="Art &amp; Drawing Resources curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/drawing/resources.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/drawing/">Drawing</a></li>
+      <li><a href="/drawing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/drawing/projects.html">Projects</a></li>
+      <li><a href="/drawing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/drawing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/drawing/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/drawing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="art-drawing-resources">Art &amp; Drawing Resources</h1>
+<p>A compiled collection of free (and some paid) resources for learning drawing, digital painting, and 3D art.</p>
+<p>Table Of Contents:</p>
+<ul>
+<li><a href="#fundamentals-general-courses">Fundamentals &amp; General Courses</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#figure-pose-drawing-tools">Figure &amp; Pose Drawing Tools</a></li>
+<li><a href="#challenges-communities">Challenges &amp; Communities</a></li>
+<li><a href="#warm-ups-daily-practice">Warm-ups &amp; Daily Practice</a></li>
+<li><a href="#anatomy-figure-drawing-books--pdfs">Anatomy &amp; Figure Drawing (Books &amp; PDFs)</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#2d-art---specialized-topics">2D Art - Specialized Topics</a></li>
+<li><a href="#3d-art-vfx">3D Art &amp; VFX</a></li>
+<li><a href="#supplies-stock-resources">Supplies &amp; Stock Resources</a></li>
+<li><a href="#textures">Textures</a></li>
+<li><a href="#stock-photos">Stock Photos</a></li>
+<li><a href="#materials">Materials</a></li>
+</ul>
+<h2 id="other-curricula">Other curricula</h2>
+<ul>
+<li><a href="https://www.soloartcurriculum.com/" target="_blank" rel="noopener noreferrer">Solo Art Curriculum (Self-Taught Artist Guide)</a></li>
+<li><a href="https://www.learnto.day/drawing" target="_blank" rel="noopener noreferrer">LearnTo.day Drawing Curriculum</a></li>
+<li><a href="https://artwod.com/" target="_blank" rel="noopener noreferrer">Artwod Structured Roadmaps &amp; Exercises</a></li>
+</ul>
+<h2 id="fundamentals-general-courses">Fundamentals &amp; General Courses</h2>
+<ul>
+<li><a href="https://www.ctrlpaint.com/" target="_blank" rel="noopener noreferrer">Ctrl+Paint</a> - Huge free tutorial library covering the fundamentals of digital art.</li>
+<li><a href="https://drawabox.com/" target="_blank" rel="noopener noreferrer">Drawabox</a> - Free structured course of basic drawing exercises, from fundamentals to figures and environments.</li>
+<li><a href="https://www.proko.com/library/" target="_blank" rel="noopener noreferrer">Proko</a> - Free video lessons on figure drawing and human anatomy.</li>
+<li><a href="https://digitalpaintingstudio.com/p/art-fundamentals-in-one-hour" target="_blank" rel="noopener noreferrer">Digital Painting Studio - Free Intro Courses</a> - Free introductory lessons on art fundamentals and Photoshop.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLVgLT-e3jXPDgeED0pD0BPq8kY1VAZAGa" target="_blank" rel="noopener noreferrer">Art Fundamentals Playlist</a> - Free YouTube playlist covering the basics of drawing and painting.</li>
+<li><a href="https://gumroad.com/l/freedigital" target="_blank" rel="noopener noreferrer">Free Photoshop Basics</a> - Free 20-minute screencast on setting up your tablet and Photoshop.</li>
+<li><a href="http://paintable.cc/" target="_blank" rel="noopener noreferrer">Paintable</a> - Free quick, practical Photoshop painting tips.</li>
+<li><a href="https://design.tutsplus.com/articles/i-want-to-draw-simple-exercises-for-complete-beginners--vector-20583" target="_blank" rel="noopener noreferrer">Drawing for Complete Beginners</a> - Free simple starter exercises for brand-new artists.</li>
+<li><a href="https://design.tutsplus.com/series/how-to-learn-to-draw--cms-890" target="_blank" rel="noopener noreferrer">How to Learn to Draw</a> - Free Tuts+ series walking through drawing fundamentals.</li>
+<li><a href="https://www.drawright.com/" target="_blank" rel="noopener noreferrer">Draw Right</a> - Free structured drawing lessons for beginners.</li>
+<li><a href="https://www.youtube.com/watch?v=k0ufz75UvHs" target="_blank" rel="noopener noreferrer">Iterative Drawing</a> - Free video on improving through repeated iteration.</li>
+<li><a href="https://www.youtube.com/watch?v=piKV5nXL-C4" target="_blank" rel="noopener noreferrer">What are the Fundamentals of Art?</a> - Free overview video on core art fundamentals.</li>
+<li><a href="https://docs.google.com/document/d/1OTqhtsRMR3I_tofdM7D0GqdBMcg9-7kLZ_9gbL9SFcA/edit" target="_blank" rel="noopener noreferrer">Art Tutorial Mega List</a> - Large free community-curated list of art tutorials.</li>
+<li><a href="http://artyfactory.com" target="_blank" rel="noopener noreferrer">ArtyFactory</a> - Free drawing and painting tutorials for beginners.</li>
+<li><a href="https://www.drawspace.com/" target="_blank" rel="noopener noreferrer">Drawspace</a> - Free structured drawing lessons.</li>
+<li><a href="http://www.thriveart.com/" target="_blank" rel="noopener noreferrer">Thrive Art</a> - Free online drawing lessons and resources.</li>
+<li><a href="http://www.toadhollowstudio.com/index.html" target="_blank" rel="noopener noreferrer">Toad Hollow Studio</a> - Free drawing lessons site.</li>
+<li><a href="http://www.fivepencilmethod.com/tutorials/" target="_blank" rel="noopener noreferrer">Five Pencil Method</a> - Free step-based drawing method tutorials.</li>
+<li><a href="http://www.klinecreative.com/free-online-art-lessons.htm" target="_blank" rel="noopener noreferrer">Kline Creative</a> - Free online art lessons.</li>
+<li><a href="http://www.drawingcoach.com/" target="_blank" rel="noopener noreferrer">Drawing Coach</a> - Free beginner-friendly drawing tutorials.</li>
+<li><a href="http://www.thedrawingwebsite.com/" target="_blank" rel="noopener noreferrer">The Drawing Website</a> - Free collection of drawing lessons and tips.</li>
+<li><a href="http://androidarts.com/art_tut.htm" target="_blank" rel="noopener noreferrer">androidarts: Art Tutorial</a> - Free classic concept-art-focused painting tutorial.</li>
+<li><a href="http://gurneyjourney.blogspot.com/" target="_blank" rel="noopener noreferrer">Gurney Journey</a> - James Gurney's free daily blog on color, light, and representational art.</li>
+</ul>
+<h2 id="youtube-channels">YouTube Channels</h2>
+<ul>
+<li><a href="https://www.youtube.com/user/ProkoTV/videos" target="_blank" rel="noopener noreferrer">Proko (Stan Prokopenko)</a> - The best free collection of figure drawing and anatomy tutorials online.</li>
+<li><a href="https://www.youtube.com/user/circlelinemedia/videos" target="_blank" rel="noopener noreferrer">Circle Line Art School</a> - Free fundamentals, environments, and perspective tutorials for beginners.</li>
+<li><a href="https://www.youtube.com/user/Sycra/videos" target="_blank" rel="noopener noreferrer">Sycra</a> - Free step-by-step digital painting, drawing, and design tutorials.</li>
+<li><a href="https://www.youtube.com/user/FZDSCHOOL/videos" target="_blank" rel="noopener noreferrer">Feng Zhu Design (FZD)</a> - Free in-depth environment and concept art tutorials from a top concept art teacher.</li>
+<li><a href="https://www.youtube.com/c/ALPHONSODUNN/videos" target="_blank" rel="noopener noreferrer">Alphonso Dunn</a> - Free traditional art fundamentals applicable to digital drawing and painting.</li>
+<li><a href="https://www.youtube.com/channel/UC_cjN86adGCRzVAzMz0S3HA/videos" target="_blank" rel="noopener noreferrer">Jaysen Batchelor</a> - Free tutorials and timelapses in a Disney-style illustration approach.</li>
+<li><a href="https://www.youtube.com/channel/UCWDX4kW42NGdr2yV8G8mSvw" target="_blank" rel="noopener noreferrer">SVS Learn YouTube Channel</a> - Free illustration tutorials and professional advice podcast.</li>
+<li><a href="https://www.youtube.com/@SakugaFoundry" target="_blank" rel="noopener noreferrer">Sakuga</a> - Free channel focused on animation technique and analysis.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLzDE6rf7BxBIvFF2j8qHmThSCBv1ssvd7" target="_blank" rel="noopener noreferrer">Marc Brunet Art School Playlist</a> - Free YouTube series covering backgrounds, landscapes, and environments.</li>
+<li><a href="https://www.youtube.com/results?search_query=croquis+cafe" target="_blank" rel="noopener noreferrer">Croquis Cafe (search)</a> - Free timed figure drawing reference videos.</li>
+<li><a href="https://www.youtube.com/channel/UCUQTqWAaSzhAKRanOpes1nA" target="_blank" rel="noopener noreferrer">Sinix Design</a> - Free long-running channel covering digital painting, anatomy, and design theory.</li>
+<li><a href="https://www.youtube.com/channel/UCsDxB-CSMQ0Vu_hTag7-2UQ" target="_blank" rel="noopener noreferrer">Marco Bucci</a> - Free painting fundamentals, color &amp; light, and applied demo videos.</li>
+</ul>
+<h2 id="figure-pose-drawing-tools">Figure &amp; Pose Drawing Tools</h2>
+<ul>
+<li><a href="http://artists.pixelovely.com/practice-tools/" target="_blank" rel="noopener noreferrer">Pixelovely Practice Tools</a> - Free timed figure, face, and animal reference image drawing practice.</li>
+<li><a href="https://quickposes.com/en" target="_blank" rel="noopener noreferrer">Quickposes</a> - Free timed figure drawing reference tool.</li>
+<li><a href="https://www.posemaniacs.com/" target="_blank" rel="noopener noreferrer">Posemaniacs</a> - Free rotatable 3D figure poses for gesture practice.</li>
+<li><a href="https://line-of-action.com/" target="_blank" rel="noopener noreferrer">Line of Action</a> - Free timed figure drawing practice with varied pose sets.</li>
+<li><a href="http://reference.sketchdaily.net/en/" target="_blank" rel="noopener noreferrer">Sketch Daily Reference</a> - Free figure reference image database for practice.</li>
+<li><a href="http://figuresfordrawing.tumblr.com/" target="_blank" rel="noopener noreferrer">Figures for Drawing</a> - Free Tumblr blog of figure reference photos.</li>
+<li><a href="http://artmodelsphoto.tumblr.com/" target="_blank" rel="noopener noreferrer">Art Models Photo</a> - Free reference photos for figure drawing.</li>
+<li><a href="http://www.proko.com/poses/" target="_blank" rel="noopener noreferrer">Proko Poses</a> - Free figure reference poses curated by Proko.</li>
+<li><a href="https://x6ud.github.io/#/" target="_blank" rel="noopener noreferrer">Animal Heads 3D Viewer</a> - Free rotatable 3D animal head reference models.</li>
+<li><a href="https://www.artstation.com/artwork/GX3Ax1" target="_blank" rel="noopener noreferrer">Human Head Reference (male)</a> - Free 3D head reference turnaround.</li>
+</ul>
+<h2 id="challenges-communities">Challenges &amp; Communities</h2>
+<ul>
+<li><a href="https://artfight.net/" target="_blank" rel="noopener noreferrer">Art Fight</a> - Free annual community art-trading challenge event.</li>
+<li><a href="https://www.drawtober.com/" target="_blank" rel="noopener noreferrer">Drawtober</a> - Free October daily drawing challenge.</li>
+<li><a href="https://monikazagrobelna.com/" target="_blank" rel="noopener noreferrer">Monika Zagrobelna's Tutorials</a> - Free in-depth art tutorials and challenges.</li>
+<li><a href="https://www.reddit.com/r/ArtFundamentals" target="_blank" rel="noopener noreferrer">r/ArtFundamentals</a> - Free Reddit community centered on structured art fundamentals study.</li>
+<li><a href="https://www.reddit.com/r/Artbuddy" target="_blank" rel="noopener noreferrer">r/Artbuddy</a> - Free Reddit community for finding art accountability partners.</li>
+<li><a href="http://deviantart.com" target="_blank" rel="noopener noreferrer">DeviantArt</a> - Free large online community for sharing and discovering artwork.</li>
+</ul>
+<h2 id="warm-ups-daily-practice">Warm-ups &amp; Daily Practice</h2>
+<ul>
+<li><a href="https://www.inkwell.studio/" target="_blank" rel="noopener noreferrer">Inkwell App</a> - Free 5-minute daily digital painting warm-up app.</li>
+</ul>
+<h2 id="anatomy-figure-drawing-free-books-pdfs">Anatomy &amp; Figure Drawing (Free Books &amp; PDFs)</h2>
+<ul>
+<li><a href="https://archive.org/details/andrew-loomis-fun-with-a-pencil" target="_blank" rel="noopener noreferrer">Andrew Loomis - Fun With a Pencil</a> - Free classic beginner-friendly drawing fundamentals book.</li>
+<li><a href="https://archive.org/details/andrewloomiscreative.illustration/" target="_blank" rel="noopener noreferrer">Andrew Loomis - Creative Illustration</a> - Free Loomis illustration and figure drawing techniques.</li>
+<li><a href="https://www.drawingforce.com/books-page-1" target="_blank" rel="noopener noreferrer">FORCE Drawing Books</a> - Free Michael Mattesi dynamic figure drawing book series.</li>
+<li><a href="https://ia601603.us.archive.org/20/items/pdfy-72f-FzW7wYN_r0ny/Bridgman%20-%20Complete%20Guide%20to%20Drawing%20from%20Life_text.pdf" target="_blank" rel="noopener noreferrer">Bridgman - Complete Guide to Drawing from Life</a> - Free classic anatomy and figure construction reference.</li>
+<li><a href="https://anatomy4sculptors.com/" target="_blank" rel="noopener noreferrer">Anatomy for Sculptors</a> - Free anatomy reference site aimed at sculptors and artists.</li>
+<li><a href="https://archive.org/details/purplerosepetals/" target="_blank" rel="noopener noreferrer">Atlas of Human Anatomy for the Artist (Peck)</a> - Free detailed anatomical reference atlas.</li>
+<li><a href="https://archive.org/details/BurneHogarthDrawingDynamicHands" target="_blank" rel="noopener noreferrer">Burne Hogarth - Drawing Dynamic Hands</a> - Free hand anatomy and construction guide.</li>
+<li><a href="https://artesplasticasydiseno.wordpress.com/wp-content/uploads/2012/12/burne-hogarth-dynamic-figure-drawing.pdf" target="_blank" rel="noopener noreferrer">Burne Hogarth - Dynamic Figure Drawing (PDF)</a> - Free dynamic approach to figure construction.</li>
+<li><a href="https://archive.org/details/how-to-draw-and-paint-anatomy_202404" target="_blank" rel="noopener noreferrer">How to Draw and Paint Anatomy</a> - Free anatomy drawing and painting guide.</li>
+<li><a href="https://dn790006.ca.archive.org/0/items/Anatomy-A_Complete_Guide_for_Artists_Joseph_Sheppard/Anatomy-A_Complete_Guide_for_Artists_Joseph_Sheppard.pdf" target="_blank" rel="noopener noreferrer">Sheppard - Anatomy: A Complete Guide for Artists</a> - Free comprehensive anatomy reference for artists.</li>
+<li><a href="https://cursoseorientacoes.com/wp-content/uploads/2014/09/michael-hampton-figure-drawing-design-and-invention-1.pdf" target="_blank" rel="noopener noreferrer">Hampton - Figure Drawing: Design and Invention</a> - Free popular modern figure construction method.</li>
+<li><a href="https://archive.org/details/Vilppu_Drawing_Manual.pdf" target="_blank" rel="noopener noreferrer">Vilppu Drawing Manual</a> - Free Glenn Vilppu classic figure drawing manual.</li>
+<li><a href="https://ia902907.us.archive.org/28/items/Color_and_Light_James_Gurney_English/Color_and_Light_James_Gurney_English.pdf" target="_blank" rel="noopener noreferrer">Color and Light (James Gurney)</a> - Free practical guide to color and light theory for representational art.</li>
+<li><a href="https://archive.org/details/simplydrawing0000gran" target="_blank" rel="noopener noreferrer">Simply Drawing</a> - Free beginner drawing instruction book.</li>
+<li><a href="https://archive.org/details/isbn_9781440309311" target="_blank" rel="noopener noreferrer">Mastering Manga</a> - Free step-by-step manga drawing instruction.</li>
+<li><a href="https://archive.org/details/TheAnimatorsSurvivalKitRichardWilliams" target="_blank" rel="noopener noreferrer">The Animator's Survival Kit</a> - Free Richard Williams definitive animation principles guide.</li>
+<li><a href="https://archive.org/details/drawingbasicsvid0000sola" target="_blank" rel="noopener noreferrer">Drawing Basics and Video Game Art</a> - Free Chris Solarski book connecting drawing fundamentals to game art.</li>
+</ul>
+<h2 id="2d-art-specialized-topics">2D Art - Specialized Topics</h2>
+<ul>
+<li><a href="https://guineapigparkour.itch.io/learning-2d-animation-the-absolute-beginners-entry" target="_blank" rel="noopener noreferrer">2D Animation for Absolute Beginners</a> - Free intro guide to 2D animation.</li>
+<li><a href="https://web.archive.org/web/20151101072040/http://hippie.nu/~unicorn/tut/xhtml/" target="_blank" rel="noopener noreferrer">TL;DR Tutorial Archive</a> - Free archived art tutorial compilation.</li>
+<li><a href="https://pinnguaq.com/learn/creating-voxel-art-with-magicavoxel/" target="_blank" rel="noopener noreferrer">Voxel Art with MagicaVoxel</a> - Free intro guide to voxel art creation.</li>
+<li><a href="https://photographylife.com/learn-photography" target="_blank" rel="noopener noreferrer">Photography Life: Learn Photography</a> - Free photography fundamentals resource.</li>
+</ul>
+<h2 id="3d-art-vfx">3D Art &amp; VFX</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLD8E5717592CF5C26" target="_blank" rel="noopener noreferrer">Intro to Maya I</a> - Free beginner Maya tutorial playlist.</li>
+<li><a href="https://www.youtube.com/watch?v=uDqjIdI4bF4" target="_blank" rel="noopener noreferrer">12 Principles of Animation</a> - Free overview of the foundational animation principles.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z" target="_blank" rel="noopener noreferrer">Blender Donuts</a> - Free popular beginner Blender tutorial series.</li>
+<li><a href="https://www.khanacademy.org/computing/pixar" target="_blank" rel="noopener noreferrer">Pixar in a Box</a> - Free Khan Academy series on the math and science behind Pixar films.</li>
+<li><a href="https://www.sidefx.com/learn/collections/houdini-isnt-scary/" target="_blank" rel="noopener noreferrer">Intro to Houdini</a> - Free beginner-friendly introduction to Houdini.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLB0wXHrWAmCwnqWfKdGEmbtSKN2EzvLrY" target="_blank" rel="noopener noreferrer">Intro to Substance</a> - Free Substance Painter/Designer tutorial playlist.</li>
+<li><a href="https://learn.foundry.com/course/6708/view/your-first-day-in-nuke" target="_blank" rel="noopener noreferrer">Intro to Nuke</a> - Free compositing fundamentals in Nuke.</li>
+<li><a href="https://archive.org/details/illuminatedpixel0000wiss" target="_blank" rel="noopener noreferrer">Illuminated Pixels: Lighting for 3D Graphics</a> - Free book on 3D lighting theory and practice.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLxU8Sv31fiKT9-VkulF0oNgWCQGjoqF2m" target="_blank" rel="noopener noreferrer">VEX Programming in Houdini</a> - Free Houdini VEX scripting language tutorials.</li>
+<li><a href="https://www.youtube.com/watch?v=KURuPAVJ6hM" target="_blank" rel="noopener noreferrer">Digital Sculpting</a> - Free intro video on digital sculpting techniques.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOcFlKaT7TO8dmMhkDERt_JC_kdGSv3Vn" target="_blank" rel="noopener noreferrer">VFX in Houdini Playlist</a> - Free visual effects tutorials using Houdini.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOcFlKaT7TO8FOTF1mFQeq-sqaQDDGTk7" target="_blank" rel="noopener noreferrer">VFX Playlist</a> - Free general visual effects tutorial playlist.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLOcFlKaT7TO8UN5NJoOjKIXJ-pgw8A1Tj" target="_blank" rel="noopener noreferrer">After Effects 3D</a> - Free 3D compositing techniques in After Effects.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPcgvO78EcAot0aVyu5TQTbzBAwtx-oZK" target="_blank" rel="noopener noreferrer">3D Animation Playlist</a> - Free general 3D animation tutorial series.</li>
+<li><a href="https://renderman.pixar.com/learn" target="_blank" rel="noopener noreferrer">RenderMan Learning Hub</a> - Free official tutorials for Pixar's RenderMan renderer.</li>
+</ul>
+<h2 id="free-software">Free Software</h2>
+<ul>
+<li><a href="https://krita.org/" target="_blank" rel="noopener noreferrer">Krita</a> - Free, open-source digital painting and illustration software.</li>
+<li><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a> - Free, open-source raster image editor usable for digital painting.</li>
+<li><a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a> - Free, open-source vector graphics editor.</li>
+</ul>
+<h2 id="supplies-stock-resources">Supplies &amp; Stock Resources</h2>
+<h3 id="textures">Textures</h3>
+<ul>
+<li><a href="http://www.textures.com" target="_blank" rel="noopener noreferrer">Textures.com</a> - Free texture images for art and design (free tier available).</li>
+<li><a href="http://www.textureking.com/" target="_blank" rel="noopener noreferrer">Texture King</a> - Free texture image resource.</li>
+<li><a href="http://wegraphics.net/" target="_blank" rel="noopener noreferrer">WeGraphics</a> - Free design resources including textures.</li>
+<li><a href="http://lostandtaken.com/" target="_blank" rel="noopener noreferrer">Lost and Taken</a> - Free high-quality textures.</li>
+<li><a href="http://inspirationhut.net/design-resources/38-fantastic-vintage-old-clean-and-free-paper-textures/" target="_blank" rel="noopener noreferrer">Vintage Paper Textures (Inspiration Hut)</a> - Free collection of vintage paper textures.</li>
+</ul>
+<h3 id="stock-photos">Stock Photos</h3>
+<ul>
+<li><a href="http://flickr.com" target="_blank" rel="noopener noreferrer">Flickr</a> - Photo-sharing platform usable for free reference images.</li>
+<li><a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a> - Free stock photos and images.</li>
+<li><a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a> - Free stock photography.</li>
+<li><a href="http://freeimages.com/" target="_blank" rel="noopener noreferrer">FreeImages</a> - Free stock photo library.</li>
+</ul>
+<h2 id="source">Source</h2>
+<ul>
+<li><a href="https://www.reddit.com/r/DigitalArt/comments/k4hk8g/collection_of_the_best_free_online_resources_for/" target="_blank" rel="noopener noreferrer">Collection of the best free online resources for learning Digital Art</a></li>
+<li><a href="https://www.reddit.com/r/Illustration/comments/2t3tq2/what_are_some_of_the_best_resources_for_learning/" target="_blank" rel="noopener noreferrer">What are some of the best resources for learning to draw/sketch?</a></li>
+<li><a href="https://github.com/MasqueradeOfSilence/personal-curriculum/blob/main/ART.md" target="_blank" rel="noopener noreferrer"><code>MasqueradeOfSilence/personal-curriculum</code></a></li>
+<li><a href="https://github.com/CianciuStyles/knowledge/blob/master/l/learning/drawing.md" target="_blank" rel="noopener noreferrer"><code>CianciuStyles/knowledge</code></a></li>
+<li><a href="https://gist.github.com/aahan/5993958#file-learn-to-draw-md" target="_blank" rel="noopener noreferrer"><code>aahan/Learn To Draw</code></a></li>
+<li><a href="https://gist.github.com/jaimeiniesta/f4d4f6ab14952d14dcf6" target="_blank" rel="noopener noreferrer"><code>jaimeiniesta/digital-tablet-tips</code></a></li>
+</ul>
+    </article>
+  </main>
+
+</body>
+</html>
